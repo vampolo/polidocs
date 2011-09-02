@@ -1,0 +1,357 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Assignment two
+\end_layout
+
+\begin_layout Section
+Question 1
+\end_layout
+
+\begin_layout Standard
+The dual problem can be formulated as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+max\,\sum_{S\epsilon\mathcal{F}}\mu_{s}-(n-1)\pi_{1}+\sum_{i=2}^{n}\pi_{i}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{\left(i,j\right)\epsilon A,\, i\epsilon S,\, j\notin S}\mu_{s}-kz_{ij}\leq c_{ij\quad\left(i,\, j\right)\in A}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z_{ij}-\pi_{1}-\pi_{i}\leq0\quad\left(i,\, j\right)\in A'\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z_{ij}+\pi_{1}+\pi_{i}\leq0\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+\mu_{s}\geq0\quad s\in\mathcal{F}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z_{ij}\leq0\quad\left(i,\, j\right)\in A\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\pi_{1}\gtreqqless0,\:\pi_{i}\gtreqqless0\quad i=1\ldots N\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Question 2
+\end_layout
+
+\begin_layout Standard
+To check that it's the optimal solution i should write the dual problem
+ and check that 
+\end_layout
+
+\begin_layout Standard
+The dual problem is the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+min\:-3y_{a}+2y_{b}+6y_{c}+29y_{d}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-2y_{a}-y_{b}+y_{c}+2y_{d}\geq1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-y_{a}+3y_{b}-y_{c}+y_{d}\geq2\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{i}\geq0\quad i=a,b,c,d\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And these are complementary slachness conditions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}\left(-2y_{a}-y_{b}+y_{c}+2y_{d}-1\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{2}\left(-y_{a}+3y_{b}-y_{c}+y_{d}-2\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{a}\left(-2x_{1}-x_{2}+3\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+follows that 
+\begin_inset Formula $y_{a}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{b}\left(-x_{1}+3x_{2}-24\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+follows that we don't know the value of 
+\begin_inset Formula $y_{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{c}\left(x_{1}-x_{2}-6\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+follows that 
+\begin_inset Formula $y_{c}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{d}\left(2x_{1}+x_{2}-29\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+follows that we don't know the value of 
+\begin_inset Formula $y_{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can calculate the missing 
+\begin_inset Formula $y_{b}$
+\end_inset
+
+and 
+\begin_inset Formula $y_{d}$
+\end_inset
+
+using the first two equations:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{cases}
+-2y_{a}-y_{b}+y_{c}+2y_{d}-1=0 & y_{a}=0\\
+-y_{a}+3y_{b}-y_{c}+y_{d}-2=0 & y_{c}=0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and we end up with:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{cases}
+y_{b}=\frac{3}{7}\\
+y_{d}=\frac{5}{7}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula $y_{bar}=\left[0,\frac{3}{7},0,\frac{5}{7}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $y_{bar}$
+\end_inset
+
+ does not contain any negative value it's a feasible solution.
+ This proves that the given values are optimal.
+\end_layout
+
+\begin_layout Section
+Question 3
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $P=\left\{ x\epsilon R^{n}:\: Ax\leq b\right\} $
+\end_inset
+
+be a convex polyhedron.
+ A vector 
+\begin_inset Formula $x$
+\end_inset
+
+ is a basic solution if among all the 
+\begin_inset Formula $m$
+\end_inset
+
+ vectors there are 
+\begin_inset Formula $n$
+\end_inset
+
+ being linearly indipendent.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorem 3.6
+\series default
+ about 
+\emph on
+Strong Duality
+\emph default
+ 
+\end_layout
+
+\begin_layout Section
+Question 4
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

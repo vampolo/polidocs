@@ -1,0 +1,56 @@
+option solver cplexamp;
+
+solve;
+
+printf "%%!PS-Adobe-3.0 EPSF-3.0\n" > (file);
+printf "%%%%BoundingBox: 0 0 %d %d\n",
+      (72 / 25.4) * (x1 - x0), (72 / 25.4) * (y1 - y0) >> (file);
+printf "/Helvetica findfont 6 scalefont setfont\n" >> (file);
+printf "/mm { 72 mul 25.4 div } def\n" >> (file);
+
+for {(i,j) in E: z[i,j] = 0.0}
+{     printf "newpath\n" >> (file);
+      printf "%g mm %g mm moveto\n", x[i] - x0, y[i] - y0 >> (file);
+      printf "%g mm %g mm lineto\n", x[j] - x0, y[j] - y0 >> (file);
+      printf "stroke\n" >> (file);
+}
+
+for {(i,j) in E: z[i,j] = 1.0}
+{     printf "newpath\n" >> (file);
+      printf "1 0 0 setrgbcolor fill\n" >> (file);
+      printf "%g mm %g mm moveto\n", x[i] - x0, y[i] - y0 >> (file);
+      printf "%g mm %g mm lineto\n", x[j] - x0, y[j] - y0 >> (file);
+      printf "stroke\n" >> (file);
+}
+
+
+for {i in V: i not in T}
+{     printf "newpath\n" >> (file);
+      printf "0 0 0 setrgbcolor fill\n" >> (file);
+      printf "%g mm %g mm %g mm 0 360 arc\n",
+         x[i] - x0, y[i] - y0, 3 >> (file);
+      printf "closepath\n" >> (file);
+      printf "gsave 1 1 1 setrgbcolor fill grestore\n" >> (file);
+      printf "stroke\n" >> (file);
+      printf "%g mm %g mm moveto\n",
+         x[i] - (if i <= 9 then 1.2 else 1.8) - x0,
+         y[i] - 0.8 - y0 >> (file);
+      printf "( %d ) show\n", i >> (file);
+}
+
+for {i in T}
+{     printf "newpath\n" >> (file);
+      printf "1 0 0 setrgbcolor fill\n" >> (file);
+      printf "%g mm %g mm %g mm 0 360 arc\n",
+         x[i] - x0, y[i] - y0, 3 >> (file);
+      printf "closepath\n" >> (file);
+      printf "gsave 1 1 1 setrgbcolor fill grestore\n" >> (file);
+      printf "stroke\n" >> (file);
+      printf "%g mm %g mm moveto\n",
+         x[i] - (if i <= 9 then 1.2 else 1.8) - x0,
+         y[i] - 0.8 - y0 >> (file);
+      printf "( %d ) show\n", i >> (file);
+}
+
+printf "showpage\n" >> (file);
+printf "%%%%EOF\n" >> (file);

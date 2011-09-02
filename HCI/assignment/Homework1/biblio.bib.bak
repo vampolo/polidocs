@@ -1,0 +1,32 @@
+% This file was created with JabRef 2.6.
+% Encoding: UTF-8
+
+@ELECTRONIC{louvre-website,
+  title = {Sito web del Louvre},
+  url = {http://www.louvre.fr/},
+  owner = {goshawk},
+  timestamp = {2010.11.01}
+}
+
+@ELECTRONIC{w3c-validator,
+  title = {Validatore W3C},
+  url = {http://validator.w3.org/},
+  owner = {goshawk},
+  timestamp = {2010.11.07}
+}
+
+@ELECTRONIC{webboard,
+  title = {Webboard HCI},
+  url = {http://hoc3.elet.polimi.it/webboard/},
+  owner = {goshawk},
+  timestamp = {2010.11.06}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+

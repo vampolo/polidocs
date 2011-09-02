@@ -1,0 +1,15 @@
+option solver cplexamp;
+option presolve 0;
+option send_statuses 0;
+
+# UNCOMMENT ONE OF THE TWO OPTIONS BELOW
+
+# OPTION 1: Not using any type cuts
+#option cplex_options "presolve=0 prereduce=0 mipcuts=-1 mipdisplay=3";
+#solve;
+
+# OPTION 2: Using moderate Gomory cut generation
+#option cplex_options "presolve=0 prereduce=0 mipcuts=-1 fraccuts=1 mipdisplay=3";
+#solve;
+
+

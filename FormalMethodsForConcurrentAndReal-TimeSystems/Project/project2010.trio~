@@ -1,0 +1,85 @@
+class RadiologyDepartment;
+
+modules
+	depRis: Ris;
+	depPacs: Pacs;
+
+connections
+	//TODO
+
+end RadiologyDepartment;
+
+class Ris;
+	visible visitRequest;
+	temporal domain real;
+
+	TI items
+		predicates	visitRequest({exam});
+		variables	visitTime: real;
+				modality: [0..1];
+		
+	axioms	
+		vars i:real;
+		/* if the modality is not free the visit is rescheduled
+		 * either automatically or by entering a new request
+		 * should this component emit a signal on visit scheduled? yes
+		 * should i model the scheduler too? no
+		 * future->last->available
+		 */
+		
+		
+end Ris;
+
+class Pacs;
+
+/* components:
+ *		digital imagin modality
+ *		network
+ *		archive device
+ *		diagnostic workstation
+ *		archive/routing software
+ *		some interplay with the hospital or radiology information system
+ *		
+ */
+
+end Pacs;
+
+class ImageServer;
+end ImageServer;
+
+class Workstation;
+end Workstation;
+
+class GenericImageDeviceBounded;
+end GenericImageDeviceBounded;
+
+class GenericImageDeviceUnbounded(const U1, const U2);
+	TD items
+		variables	free: [0..1]; --> boolean?
+	axioms	vars i:real;
+		
+end GenericImageDevicesUnbounded;
+
+class Cr;
+	inherits GenericImageDeviceBounded;
+end Cr;
+
+class Dx;
+	inherits GenericImageDeviceBounded;
+end dx;
+
+class Ct;
+	inherits GenericImageDeviceBounded;
+end Ct;
+
+class Nm;
+	inherits GenericImageDeviceUnbounded;
+end Nm;
+
+class U;
+	inherits GenericImageDeviceUnbounded;
+end U;
+
+class Mri;
+	inherits GenericImageDeviceUnbounded;
+end Mri;

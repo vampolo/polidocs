@@ -1,0 +1,2291 @@
+%PDF-1.3
+%«Ïè¢
+1 0 obj
+<</Type/Font/Subtype/Type1/Name/F1/BaseFont/Helvetica/Encoding/WinAnsiEncoding>>
+endobj
+2 0 obj
+<</Type/Font/Subtype/Type1/Name/F2/BaseFont/Helvetica-Bold/Encoding/WinAnsiEncoding>>
+endobj
+3 0 obj
+<</Type/Font/Subtype/Type1/Name/F3/BaseFont/Helvetica-Oblique/Encoding/WinAnsiEncoding>>
+endobj
+4 0 obj
+<</Type/Font/Subtype/Type1/Name/F4/BaseFont/Helvetica-BoldOblique/Encoding/WinAnsiEncoding>>
+endobj
+5 0 obj
+<</Length 7546>>
+stream
+BT 1 0 0 1 72 763 Tm
+/F1 9 Tf 0 0 0 rg /F2 9 Tf 0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shmid_ds)Tj
+/F2 9 Tf ({)Tj
+0 -10.8 TD
+(          )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (ipc_perm)Tj
+( )Tj
+(shm_perm)Tj
+/F2 9 Tf (;)Tj
+T*
+(          )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shm_segsz)Tj
+/F2 9 Tf (;)Tj
+T*
+(          )Tj
+/F1 9 Tf (u_short)Tj
+( )Tj
+(shm_lpid)Tj
+/F2 9 Tf (;)Tj
+T*
+(          )Tj
+/F1 9 Tf (u_short)Tj
+( )Tj
+(shm_cpid)Tj
+/F2 9 Tf (;)Tj
+T*
+(          )Tj
+/F1 9 Tf (u_short)Tj
+( )Tj
+(shm_nattch)Tj
+/F2 9 Tf (;)Tj
+T*
+(          )Tj
+/F1 9 Tf (time_t)Tj
+( )Tj
+(shm_atime)Tj
+/F2 9 Tf (;)Tj
+T*
+(          )Tj
+/F1 9 Tf (time_t)Tj
+( )Tj
+(shm_dtime)Tj
+/F2 9 Tf (;)Tj
+T*
+(          )Tj
+/F1 9 Tf (time_t)Tj
+( )Tj
+(shm_ctime)Tj
+/F2 9 Tf (;)Tj
+T*
+(  )Tj
+(};)Tj
+T*
+T*
+0 0 0.498 rg (union)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (semun)Tj
+( )Tj
+/F2 9 Tf ({)Tj
+T*
+(        )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (val)Tj
+/F2 9 Tf (;)Tj
+T*
+(        )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (semid_ds)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (buf)Tj
+/F2 9 Tf (;)Tj
+T*
+(        )Tj
+0 0 0.498 rg (unsigned)Tj
+( )Tj
+(short)Tj
+( )Tj
+(int)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (array)Tj
+/F2 9 Tf (;)Tj
+T*
+(        )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (seminfo)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (__buf)Tj
+/F2 9 Tf (;)Tj
+T*
+(};)Tj
+T*
+T*
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sembuf)Tj
+( )Tj
+/F2 9 Tf ({)Tj
+T*
+(        )Tj
+0 0 0.498 rg (unsigned)Tj
+( )Tj
+(short)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sem_num)Tj
+/F2 9 Tf (;)Tj
+T*
+(        )Tj
+0 0 0.498 rg (short)Tj
+(          )Tj
+/F1 9 Tf 0 0 0 rg (sem_op)Tj
+/F2 9 Tf (;)Tj
+T*
+(        )Tj
+0 0 0.498 rg (short)Tj
+(          )Tj
+/F1 9 Tf 0 0 0 rg (sem_flg)Tj
+/F2 9 Tf (;)Tj
+T*
+(};)Tj
+T*
+T*
+0 0 0.498 rg (const)Tj
+( )Tj
+(int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (PF_LOCAL)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (PF_INET)Tj
+/F2 9 Tf (;)Tj
+T*
+0 0 0.498 rg (const)Tj
+( )Tj
+(int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (SOCK_STREAM)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (SOCK_DGRAM)Tj
+/F2 9 Tf (;)Tj
+T*
+T*
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sockaddr_un)Tj
+( )Tj
+/F2 9 Tf ({)Tj
+T*
+(        )Tj
+/F1 9 Tf (u_char)Tj
+(  )Tj
+(sun_len)Tj
+/F2 9 Tf (;)Tj
+T*
+(    )Tj
+/F1 9 Tf (u_char)Tj
+(  )Tj
+(sun_family)Tj
+/F2 9 Tf (;)Tj
+T*
+(    )Tj
+0 0 0.498 rg (char)Tj
+(    )Tj
+/F1 9 Tf 0 0 0 rg (sun_path)Tj
+/F2 9 Tf ([)Tj
+/F1 9 Tf 0 0.498 0.498 rg (104)Tj
+/F2 9 Tf 0 0 0 rg (];)Tj
+T*
+(};)Tj
+T*
+T*
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sockaddr_in)Tj
+( )Tj
+/F2 9 Tf ({)Tj
+T*
+(    )Tj
+0 0 0.498 rg (short)Tj
+(            )Tj
+/F1 9 Tf 0 0 0 rg (sin_family)Tj
+/F2 9 Tf (;)Tj
+T*
+(    )Tj
+0 0 0.498 rg (unsigned)Tj
+( )Tj
+(short)Tj
+(   )Tj
+/F1 9 Tf 0 0 0 rg (sin_port)Tj
+/F2 9 Tf (;)Tj
+T*
+(    )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (in_addr)Tj
+(   )Tj
+(sin_addr)Tj
+/F2 9 Tf (;)Tj
+T*
+(    )Tj
+0 0 0.498 rg (char)Tj
+(             )Tj
+/F1 9 Tf 0 0 0 rg (sin_zero)Tj
+/F2 9 Tf ([)Tj
+/F1 9 Tf 0 0.498 0.498 rg (8)Tj
+/F2 9 Tf 0 0 0 rg (];)Tj
+T*
+(};)Tj
+T*
+T*
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sigaction)Tj
+( )Tj
+/F2 9 Tf ({)Tj
+T*
+(        )Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (\(*)Tj
+/F1 9 Tf (sa_handler)Tj
+/F2 9 Tf (\)\()Tj
+0 0 0.498 rg (int)Tj
+0 0 0 rg (\);)Tj
+T*
+(        )Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (\(*)Tj
+/F1 9 Tf (sa_sigaction)Tj
+/F2 9 Tf (\)\()Tj
+0 0 0.498 rg (int)Tj
+0 0 0 rg (,)Tj
+( )Tj
+/F1 9 Tf (siginfo_t)Tj
+( )Tj
+/F2 9 Tf (*,)Tj
+( )Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*\);)Tj
+T*
+(        )Tj
+/F1 9 Tf (sigset_t)Tj
+( )Tj
+(sa_mask)Tj
+/F2 9 Tf (;)Tj
+T*
+(        )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sa_flags)Tj
+/F2 9 Tf (;)Tj
+T*
+(        )Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (\(*)Tj
+/F1 9 Tf (sa_restorer)Tj
+/F2 9 Tf (\)\()Tj
+0 0 0.498 rg (void)Tj
+0 0 0 rg (\);)Tj
+T*
+(})Tj
+T*
+T*
+/F1 9 Tf (pthread_mutex_t)Tj
+( )Tj
+(mutex)Tj
+( )Tj
+/F2 9 Tf (=)Tj
+( )Tj
+/F1 9 Tf (PTHREAD_MUTEX_INITIALIZER)Tj
+/F2 9 Tf (;)Tj
+T*
+T*
+T*
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (strncat)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (restrict)Tj
+( )Tj
+(s1)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (restrict)Tj
+( )Tj
+(s2)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(n)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (strsep)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (**)Tj
+/F1 9 Tf (stringp)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (delim)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (strstr)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (s1)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (s2)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (strtok)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (restrict)Tj
+( )Tj
+(s1)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (restrict)Tj
+( )Tj
+(s2)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (strerror)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (errnum)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (FILE)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (fdopen)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (file_descriptor)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (mode)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (fopen)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (restrict)Tj
+( )Tj
+(filename)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (restrict)Tj
+( )Tj
+(mode)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (popen)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (command)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (type)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (accept)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (socket_fd)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sockaddr)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (address)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (socklen_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (addrlen)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (bind)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (socket_fd)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sockaddr)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (my_address)Tj
+/F2 9 Tf (,)Tj
+/F1 9 Tf (socklen_t)Tj
+( )Tj
+(addrlen)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (chmod)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (path)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (mode_t)Tj
+( )Tj
+(mode)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (close)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (file_descriptor)Tj
+/F2 9 Tf (\))Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (connect)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (socket_fd)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sockaddr)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (serv_addr)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (socklen_t)Tj
+( )Tj
+(addrlen)Tj
+/F2 9 Tf (\);)Tj
+ET
+endstream
+endobj
+6 0 obj
+<</Length 15199>>
+stream
+BT 1 0 0 1 72 763 Tm
+/F2 9 Tf 0 0 0 rg 0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (creat)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (pathname)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (mode_t)Tj
+( )Tj
+(mode)Tj
+/F2 9 Tf (\);)Tj
+0 -10.8 TD
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (daemon)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (nochdir)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (noclose)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (dup2)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (oldfd)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (newfd)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (dup)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (oldfd)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (execl)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (program_path)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (arg)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (execlp)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (program_path)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (arg)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (execv)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (program_path)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (arg_list)Tj
+/F2 9 Tf ([]\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (execve)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (filename)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (argv)Tj
+/F2 9 Tf ([],)Tj
+( )Tj
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (envp)Tj
+/F2 9 Tf ([]\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (execvp)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (program_path)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (arg_list)Tj
+/F2 9 Tf ([]\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (feof)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (stream)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fflush)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (stream)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fileno)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (FILE)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (stream)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fcntl)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fd)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (cmd)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (flock)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (lock)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fprintf)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (stream)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (format)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...\);)Tj
+T*
+/F1 9 Tf (size_t)Tj
+( )Tj
+(fread)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (ptr)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(size)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(nmemb)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (stream)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (void)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (free)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (ptr)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fscanf)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (stream)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (format)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fseek)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (stream)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (long)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (offset)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (whence)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fsync)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fd)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (size_t)Tj
+( )Tj
+(fwrite)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (ptr)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(size)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(nmemb)Tj
+/F2 9 Tf (,)Tj
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (stream)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (getopt_long)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (argc)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (argv)Tj
+/F2 9 Tf ([],)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (short_option_string)Tj
+/F2 9 Tf (,)Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (option)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (long_option_struct)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (longindex)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (uint32_t)Tj
+( )Tj
+(htonl)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (uint32_t)Tj
+( )Tj
+(hostlong)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (uint16_t)Tj
+( )Tj
+(htons)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (uint16_t)Tj
+( )Tj
+(hostshort)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (kill)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pid_t)Tj
+( )Tj
+(pid)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sig)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (link)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (path1)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (path2)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (listen)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (socket_fd)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (max_connections)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (mkfifo)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (pathname)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (mode_t)Tj
+( )Tj
+(mode)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (munmap)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (start)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(length)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (uint32_t)Tj
+( )Tj
+(ntohl)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (uint32_t)Tj
+( )Tj
+(netlong)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (uint16_t)Tj
+( )Tj
+(ntohs)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (uint16_t)Tj
+( )Tj
+(netshort)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (open)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (pathname)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (flags)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (mode_t)Tj
+( )Tj
+(mode)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pause)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (void)Tj
+0 0 0 rg (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pipe)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (filedes)Tj
+/F2 9 Tf ([)Tj
+/F1 9 Tf 0 0.498 0.498 rg (2)Tj
+/F2 9 Tf 0 0 0 rg (]\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pclose)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (FILE)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (stream)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_attr_destroy)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_attr_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (attr)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_attr_getdetachstate)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_attr_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (attr)Tj
+/F2 9 Tf (,)Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (detachstate)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_attr_init)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_attr_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (attr)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_attr_setdetachstate)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_attr_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (attr)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (detachstate)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_cancel)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_t)Tj
+( )Tj
+(thread)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_detach)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_t)Tj
+( )Tj
+(th)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_cond_broadcast)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_cond_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (cond)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_cond_destroy)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_cond_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (cond)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_cond_init)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_cond_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (cond)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_condattr_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (attr)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_cond_signal)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_cond_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (cond)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_cond_wait)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_mutex_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (mutex)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (pthread_cond_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (cond)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_create)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (thread)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (pthread_attr_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (attr)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*\(*)Tj
+/F1 9 Tf (start_routine)Tj
+/F2 9 Tf (\)\()Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*\),)Tj
+( )Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (arg)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_equal)Tj
+( )Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_t)Tj
+( )Tj
+(one_thread)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (pthread_t)Tj
+( )Tj
+(other_thread)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (void)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_exit)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (retval)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_join)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_t)Tj
+( )Tj
+(which_thread)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (**)Tj
+( )Tj
+/F1 9 Tf (thread_return_value)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_key_create)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_key_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (key)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (\(*)Tj
+/F1 9 Tf (routine)Tj
+/F2 9 Tf (\)\()Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*\)\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_key_delete)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_key_t)Tj
+( )Tj
+(key)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_mutex_destroy)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_mutex_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (mutex)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_mutex_init)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_mutex_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (mutex)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_mutexattr_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (attr)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_mutex_lock)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_mutex_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (mutex)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_mutex_trylock)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_mutex_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (mutex)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_mutex_unlock)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_mutex_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (mutex)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_setspecific)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_key_t)Tj
+( )Tj
+(key)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (value_ptr)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (realloc)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (ptr)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(size)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (scanf)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (format)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...\);)Tj
+T*
+0 0 0.498 rg (unsigned)Tj
+( )Tj
+(int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sleep)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (unsigned)Tj
+( )Tj
+(int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (seconds)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (select)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (n)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (fd_set)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (readfds)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (fd_set)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (writefds)Tj
+/F2 9 Tf (,)Tj
+/F1 9 Tf (fd_set)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (exceptfds)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (timeval)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (timeout)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (semctl)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (semid)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (semnum)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (cmd)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (union)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (semun)Tj
+( )Tj
+(arg)Tj
+/F2 9 Tf (\);)Tj
+T*
+(        )Tj
+/F1 9 Tf (command)Tj
+/F2 9 Tf (:)Tj
+( )Tj
+/F1 9 Tf (IPC_RMID)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (SETALL)Tj
+T*
+/F2 9 Tf 0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (semget)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (key_t)Tj
+( )Tj
+(key)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (num_sems)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sem_flags)Tj
+/F2 9 Tf (\);)Tj
+ET
+endstream
+endobj
+7 0 obj
+<</Length 8873>>
+stream
+BT 1 0 0 1 72 763 Tm
+/F2 9 Tf 0 0 0 rg (        )Tj
+/F1 9 Tf (key)Tj
+( )Tj
+/F2 9 Tf (:)Tj
+( )Tj
+/F1 9 Tf (IPC_PRIVATE)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...)Tj
+0 -10.8 TD
+(        )Tj
+/F1 9 Tf (sem_flags)Tj
+( )Tj
+/F2 9 Tf (:)Tj
+( )Tj
+/F1 9 Tf (O_CREAT)Tj
+( )Tj
+/F2 9 Tf (|)Tj
+( )Tj
+/F1 9 Tf (S_IRWXU)Tj
+( )Tj
+/F2 9 Tf (,...)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sem_destroy)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (sem_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (semaphore)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sem_getvalue)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (sem_t)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (sem)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (sval)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sem_init)Tj
+( )Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (sem_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (semaphore)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf 0 0.498 0.498 rg (0)Tj
+/F2 9 Tf 0 0 0 rg (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (initial_value)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (semop)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (semid)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sembuf)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (sops)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (unsigned)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (nsops)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sem_post)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (sem_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (semaphore)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sem_trywait)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (sem_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (semaphore)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sem_wait)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (sem_t)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (semaphore)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shmctl)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shmid)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (command)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shmid_ds)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (buffer)Tj
+/F2 9 Tf (\);)Tj
+T*
+(        )Tj
+/F1 9 Tf (command)Tj
+/F2 9 Tf (:)Tj
+( )Tj
+/F1 9 Tf (IPC_STAT)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (IPC_RMID)Tj
+T*
+/F2 9 Tf 0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shmdt)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (shmaddr)Tj
+/F2 9 Tf (\);)Tj
+( )Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shmget)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (key_t)Tj
+( )Tj
+(key)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(size)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shmflg)Tj
+/F2 9 Tf (\);)Tj
+T*
+(        )Tj
+/F1 9 Tf (key)Tj
+( )Tj
+/F2 9 Tf (:)Tj
+( )Tj
+/F1 9 Tf (IPC_PRIVATE)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...)Tj
+T*
+(        )Tj
+/F1 9 Tf (sem_flags)Tj
+( )Tj
+/F2 9 Tf (:)Tj
+( )Tj
+/F1 9 Tf (PC_CREAT)Tj
+( )Tj
+/F2 9 Tf (|)Tj
+( )Tj
+/F1 9 Tf (IPC_EXCL)Tj
+( )Tj
+/F2 9 Tf (|)Tj
+( )Tj
+/F1 9 Tf (S_IRUSR)Tj
+( )Tj
+/F2 9 Tf (|)Tj
+( )Tj
+/F1 9 Tf (IWUSR)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...)Tj
+( )Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sigaction)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sig)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sigaction)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (action)Tj
+/F2 9 Tf (,)Tj
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sigaction)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (old_act)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (socket)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (domain)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (type)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (protocol)Tj
+/F2 9 Tf (\);)Tj
+T*
+(        )Tj
+/F1 9 Tf (domain)Tj
+/F2 9 Tf (:)Tj
+( )Tj
+/F1 9 Tf (PF_LOCAL)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (PF_INET)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...)Tj
+T*
+(        )Tj
+/F1 9 Tf (type)Tj
+( )Tj
+/F2 9 Tf (:)Tj
+( )Tj
+/F1 9 Tf (SOCK_STREAM)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (SOCK_DGRAM)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+(...)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (unlink)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (pathname)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (pid_t)Tj
+( )Tj
+(fork)Tj
+/F2 9 Tf (\(\);)Tj
+T*
+/F1 9 Tf (pid_t)Tj
+( )Tj
+(getpid)Tj
+/F2 9 Tf (\(\);)Tj
+T*
+/F1 9 Tf (pid_t)Tj
+( )Tj
+(getppid)Tj
+/F2 9 Tf (\(\);)Tj
+T*
+/F1 9 Tf (pid_t)Tj
+( )Tj
+(wait)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (status)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (pid_t)Tj
+( )Tj
+(waitpid)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pid_t)Tj
+( )Tj
+(pid)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (status)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (options)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_cond_init)Tj
+/F2 9 Tf (\(&)Tj
+/F1 9 Tf (cond)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (NULL)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_setcancelstate)Tj
+( )Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (state)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (old_state)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_setcanceltype)Tj
+( )Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (cancel_type)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (old_state)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (pthread_t)Tj
+( )Tj
+(pthread_self)Tj
+( )Tj
+/F2 9 Tf (\(\);)Tj
+T*
+/F1 9 Tf (sighandler_t)Tj
+( )Tj
+(signal)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (signum)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (sighandler_t)Tj
+( )Tj
+(handler)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (size_t)Tj
+( )Tj
+(strspn)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (s1)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (s2)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (ssize_t)Tj
+( )Tj
+(read)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fildes)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (buf)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(nbyte)Tj
+/F2 9 Tf (\);)Tj
+T*
+/F1 9 Tf (ssize_t)Tj
+( )Tj
+(write)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (fildes)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (buf)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(nbyte)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (hostent)Tj
+( )Tj
+/F2 9 Tf (*)Tj
+/F1 9 Tf (gethostbyname)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (name)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (struct)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (hostent)Tj
+/F2 9 Tf (*)Tj
+( )Tj
+/F1 9 Tf (gethostbyaddr)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(char)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (address)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (len)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (type)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (unsigned)Tj
+( )Tj
+(int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (sleep)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (unsigned)Tj
+( )Tj
+(int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (seconds)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (void)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (exit)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (status)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (void)Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (mmap)Tj
+( )Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (start_position)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(file_length)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (access)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (flags)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (file_descriptor)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (offset)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (malloc)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (size_t)Tj
+( )Tj
+(size)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (void)Tj
+0 0 0 rg (*)Tj
+( )Tj
+/F1 9 Tf (pthread_getspecific)Tj
+/F2 9 Tf (\()Tj
+/F1 9 Tf (pthread_key_t)Tj
+( )Tj
+(key)Tj
+/F2 9 Tf (\);)Tj
+T*
+0 0 0.498 rg (void)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (pthread_testcancel)Tj
+/F2 9 Tf (\(\);)Tj
+T*
+0 0 0.498 rg (void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (shmat)Tj
+/F2 9 Tf (\()Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shmid)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (const)Tj
+( )Tj
+(void)Tj
+( )Tj
+0 0 0 rg (*)Tj
+/F1 9 Tf (shmaddr)Tj
+/F2 9 Tf (,)Tj
+( )Tj
+0 0 0.498 rg (int)Tj
+( )Tj
+/F1 9 Tf 0 0 0 rg (shmflg)Tj
+/F2 9 Tf (\);)Tj
+T*
+ET
+endstream
+endobj
+8 0 obj
+<</ProcSet[/PDF/Text]
+/Font<</F1 1 0 R/F2 2 0 R/F3 3 0 R/F4 4 0 R>> >>
+endobj
+9 0 obj
+<</Type/Page/Parent 12 0 R
+/MediaBox[ 0 0 595 842]
+/Contents 5 0 R
+/Resources 8 0 R
+>>
+endobj
+10 0 obj
+<</Type/Page/Parent 12 0 R
+/MediaBox[ 0 0 595 842]
+/Contents 6 0 R
+/Resources 8 0 R
+>>
+endobj
+11 0 obj
+<</Type/Page/Parent 12 0 R
+/MediaBox[ 0 0 595 842]
+/Contents 7 0 R
+/Resources 8 0 R
+>>
+endobj
+12 0 obj
+<</Type/Pages/Kids[
+9 0 R
+10 0 R
+11 0 R
+]/Count 3
+>>
+endobj
+13 0 obj
+<</Type/Catalog/Pages 12 0 R >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000111 00000 n 
+0000000212 00000 n 
+0000000316 00000 n 
+0000000424 00000 n 
+0000008020 00000 n 
+0000023270 00000 n 
+0000032193 00000 n 
+0000032279 00000 n 
+0000032381 00000 n 
+0000032484 00000 n 
+0000032587 00000 n 
+0000032656 00000 n 
+trailer
+<< /Size 14 /Root 13 0 R
+>>
+startxref
+32704
+%%EOF

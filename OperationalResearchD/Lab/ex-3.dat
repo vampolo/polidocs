@@ -1,0 +1,20 @@
+# "Boatload problem" - DATA
+
+# Set of materials
+set M := a b c d e;
+
+# Data for each material: p=gain, w=weight, s=volume
+param: 	  s   w     p   :=
+       a  45  1800  80
+       b  60  1200  50
+       c  30  4000  90
+       d  50  1500  60
+       e  55  5500  100;
+
+# Maximum load volume 
+param S := 150;
+
+# Maximum weight
+param W := 8000;
+
+ 

@@ -1,0 +1,25 @@
+# author: Stefano Gualandi, gualandi_at_elet.polimi.it
+# Fondamenti di Ricerca Operativa
+#
+# "Ex-8: Assegnamento di frequenze" - DATI
+set C := 1 2 3 8;
+
+
+param n := 9;
+
+set E :=      
+	(1, 2)
+      (3, 4)
+      (3, 1)
+      (3, 2)
+      (5, 6)
+      (6, 7)
+      (7, 1)
+      (7, 3)
+      (4, 5)
+      (5, 7)
+      (8, 9)
+      (8, 1)
+      (8, 2)
+      (8, 3)
+      (8, 6);

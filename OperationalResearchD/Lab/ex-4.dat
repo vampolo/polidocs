@@ -1,0 +1,33 @@
+# author: Stefano Gualandi, gualandi_at_elet.polimi.it
+# Fondamenti di Ricerca Operativa
+# Cremona, 3 aprile 2006
+#
+# "Ex 3: Oil Refinery" - DATI
+# (vedi slides usate a lezione)
+
+# Tipi di olii diversi e rispettivi costi e disponibilita`
+param: I:  c    d :=
+       1   9    5000
+       2   7    2400
+       3   12   4000
+       4   6    1500;
+
+# Insieme di benzine e rispettivo prezzo
+param: J:      r :=
+       normal  12
+       super   18
+       verde   10;
+
+# Matrice di quantita` minima olio/benzina
+param q_min:   normal super verde  :=
+	1      .      .     .
+	2      0.2    .     .
+	3      .      0.4   .
+	4      .      .     . ;
+
+# Matrice di quantita` massima olio/benzina
+param q_max:   normal super verde  :=
+	1      .      .     .
+	2      .      .     0.5
+	3      0.3    .     .
+	4      .      .     . ;

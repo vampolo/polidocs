@@ -1,0 +1,11 @@
+n_o = 10 server (identici)
+deltat = 100 giorni
+deltau = 2 server
+lambda = 2/(100 * 10) = 1/500 guasti/giorno
+MTTF = 1/lambda = 500 giorni tra due guasti
+
+- Se il sistema è parallelo:
+MTTF_sistema = 500 (1+ 1/2 +...+ 1/10) ~ 500 * 3 = 1500
+
+- Se il sistema è in serie:
+MTTF_sistema = 500/10 = 50

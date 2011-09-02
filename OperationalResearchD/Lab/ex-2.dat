@@ -1,0 +1,22 @@
+# LAB SESSION 1. - EXAMPLE B.
+
+set Types:= a b;
+
+set Components := display memory trasmission keyboards mouse micro-camera;
+
+param Score :=
+  a 3 
+  b 8;
+
+param Availability:=
+       display		10
+       memory		18
+       trasmission	12
+       keyboards 	6
+       mouse 		9 
+       micro-camera 	10;
+
+param Necessary:
+      display memory trasmission keyboards mouse micro-camera:=
+  a   1 2 1 2 1 1 
+  b   2 2 3 3 0 0;

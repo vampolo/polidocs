@@ -1,0 +1,72 @@
+# author: Stefano Gualandi, gualandi_at_elet.polimi.it
+# Fondamenti di Ricerca Operativa
+#
+# "Ex-6: Networking" - DATI
+
+data;
+
+set Nodes := a b c d e f g h i j k l m;
+ 
+param s := c; 
+
+param t := f; 
+
+param: Arcs: cap := 
+	a b 19, 
+	a c 7, 
+	a d 13, 
+	a e 2, 
+	a f 9, 
+	b a 19, 
+	b f 10, 
+	b g 18, 
+	b h 2, 
+	b c 14, 
+	c a 7, 
+	c b 14,
+	c h 7, 
+	c i 15, 
+	c j 16, 
+	c d 11, 
+	d a 13, 
+	d c 11, 
+	d j 11, 
+	d k 16, 
+	d e 17, 
+	e a 2, 
+	e d 17, 
+	e k 8, 
+	e l 13, 
+	e f 15, 
+	f e 15, 
+	f l 19, 
+	f m 4, 
+	f g 12, 
+	f b 10, 
+	f a 9, 
+	g h 9, 
+	g b 18, 
+	g f 12, 
+	g m 5, 
+	h i 14, 
+	h c 7, 
+	h b 2, 
+	h g 9, 
+	i h 14, 
+	i c 15, 
+	i j 3, 
+	j k 17, 
+	j d 11, 
+	j c 16, 
+	j i 3, 
+	k l 20, 
+	k e 8, 
+	k d 16, 
+	k j 17, 
+	l m 1, 
+	l f 19, 
+	l e 13, 
+	l k 20, 
+	m f 4,
+	m l 1, 
+	m g 5;

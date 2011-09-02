@@ -1,0 +1,18 @@
+# Exercise 10: Emergency calls
+# Refer to the lab slides
+
+# Number of available ambulances
+param k := 2;
+
+# Sites
+set P := a b c d;
+
+# Calss
+set C := 1 2 3 4 5;
+
+# Time from site i in P to call j in C
+param t :   1   2   3   4  5 :=
+	a  10   9  13  14  12
+	b  5    4  15  10  4
+	c  7   12  7   12  12
+	d  13  13  5   6   11;

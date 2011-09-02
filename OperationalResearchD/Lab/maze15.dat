@@ -1,0 +1,80 @@
+# Instance 15 - created on Jan 20th, 2010
+# The maze is encoded with two labels for each cell. The two matrix c and s give
+# color and the shape of each cell
+# The mapping of integers to colors is: 1 = blue, 2 = green, 3 = red
+# The mapping of integers to shapes is: 4 = circle, 5 = square
+# For instance, if have a cell with the numbers (2,4) it means you have a green cicle in that cell
+
+#-------------------------------
+# | 2,4 | 3,5 | 2,4 | 2,5 | 2,5 |
+# -------------------------------
+# | 3,4 | 2,4 | 1,4 | 2,5 | 2,5 |
+# -------------------------------
+# | 3,5 | 3,4 | 1,5 | 2,4 | 2,4 |
+# -------------------------------
+# | 2,5 | 2,5 | 2,5 | 1,4 | 2,4 |
+# -------------------------------
+# | 2,5 | 1,4 | 2,5 | 2,4 | 3,5 |
+# -------------------------------
+
+data;
+
+param n := 5;
+
+# The matrix c gives the color of the piece in position c[i,j]
+param c := 
+	1 1	2
+	1 2	3
+	1 3	2
+	1 4	2
+	1 5	2
+	2 1	3
+	2 2	2
+	2 3	1
+	2 4	2
+	2 5	2
+	3 1	3
+	3 2	3
+	3 3	1
+	3 4	2
+	3 5	2
+	4 1	2
+	4 2	2
+	4 3	2
+	4 4	1
+	4 5	2
+	5 1	2
+	5 2	1
+	5 3	2
+	5 4	2
+	5 5	3
+;
+
+# The matrix s gives the shape of the piece in position c[i,j]
+param s := 
+	1 1	4
+	1 2	5
+	1 3	4
+	1 4	5
+	1 5	5
+	2 1	4
+	2 2	4
+	2 3	4
+	2 4	5
+	2 5	5
+	3 1	5
+	3 2	4
+	3 3	5
+	3 4	4
+	3 5	4
+	4 1	5
+	4 2	5
+	4 3	5
+	4 4	4
+	4 5	4
+	5 1	5
+	5 2	4
+	5 3	5
+	5 4	4
+	5 5	5
+;

@@ -1,0 +1,407 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Esercitazione
+\end_layout
+
+\begin_layout Subsection
+1
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x_{1},...,x_{n}$
+\end_inset
+
+be a random sample form of a gaussian distribution 
+\begin_inset Formula $N(4.2;4)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calculate 
+\begin_inset Formula $p(x,>3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P(x,>3)=1-P(x,\leq3)=1-P(\frac{x_{1}-4.2}{a}\leq\frac{3-4.2}{a})=1-\Phi(-0.6)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find 
+\begin_inset Formula $x$
+\end_inset
+
+ s.t 
+\begin_inset Formula $P(x,\leq x)=0.7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P(x_{1}\leq x)=\Phi(\frac{x-4.2}{2})=0.7\rightarrow\frac{x-4.2}{2}=0.525\rightarrow x=2.0525+4.2=6.25\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calculate 
+\begin_inset Formula $P(\overline{x}\leq3)$
+\end_inset
+
+, with 
+\begin_inset Formula $n=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\overline{x}\backsim N\left(4.2;\frac{4}{n}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calculate 
+\begin_inset Formula $P(\left\rfloor \overline{x}-4.2\right\lfloor \leq0.3)$
+\end_inset
+
+ with 
+\begin_inset Formula $n=3,n=25$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Which is the minimum 
+\begin_inset Formula $n$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $P(\left\lfloor \overline{x}-4.2\right\rfloor \leq0.3)\geq0.8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(\left\lfloor \overline{x}-4.2\right\rfloor \leq0.3\right)\geq0.8\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2\Phi\left(\frac{0.3}{\frac{2}{\sqrt{n}}}\right)-1\geq0.8\rightarrow\frac{\Phi\left(0.15*\sqrt{n}\right)\geq0.9}{0.15*\sqrt{n}\geq1.285}\rightarrow\sqrt{n}\geq\frac{1.285}{0.15}\rightarrow n\geq73.39\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+2
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+and 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+be two indipendent r.v.'s with exp distr and mean 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+ Set 
+\begin_inset Formula $Y=x_{1}+x_{2}$
+\end_inset
+
+.
+ Moreover, let 
+\begin_inset Formula $z$
+\end_inset
+
+ be a r.v with uniform distribution over 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+, set cov 
+\begin_inset Formula $\left(Y,Z\right)=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Compute the correlation coeff of 
+\begin_inset Formula $Y$
+\end_inset
+
+ and 
+\begin_inset Formula $Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Corr\left(Y,Z\right)=\frac{Cov\left(Y,Z\right)}{\sqrt{Var\left(X\right)*\sqrt{Var\left(Z\right)}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Var\left(Y\right)=Var\left(x_{1}\right)+Var\left(x_{2}\right)=2*\frac{1}{4}=\frac{1}{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Var\left(Z\right)=\frac{1}{12}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Compute the mean and the nooooo of 
+\begin_inset Formula $W=Y-2Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left(W\right)=E\left(Y\right)-2E\left(Z\right)=1-2\frac{1}{2}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Var\left(W\right)=Var\left(Y-2Z\right)=Var\left(Y\right)+4Var\left(Z\right)+2Cov\left(Y-2Z\right)-4Cov\left(Y,Z\right)=\frac{1}{2}+4\frac{1}{12}-4*0.05=0.633\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+3
+\end_layout
+
+\begin_layout Standard
+The quantity of cofee powder utilized by an automatic cofee machine for
+ a cup of cofee is a gaussian r.v.
+ with mean 30g
+\end_layout
+
+\begin_layout Itemize
+Find the standard deviation such that 
+\begin_inset Formula $98\%$
+\end_inset
+
+ of the cups contains at least 27g of cofee powder
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ is the quantity of coffee powder (in g) 
+\begin_inset Formula $\backsim N\left(30;\sigma^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(X>27\right)=0.98\rightarrow1-\Phi\left(\frac{27-30}{\sigma}\right)=0.98\rightarrow\Phi\left(-\frac{3}{\sigma}\right)=0.02\rightarrow cont\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+4
+\end_layout
+
+\begin_layout Standard
+The glicemic level in the blood of an adult woman is a gaussian r.v.
+ with mean 
+\begin_inset Formula $\mu=80\frac{mg}{ml}$
+\end_inset
+
+and standard deviation 
+\begin_inset Formula $\sigma=20\frac{mg}{ml}$
+\end_inset
+
+.
+ If this level is 
+\begin_inset Formula $1.5\sigma$
+\end_inset
+
+greater then the mean value the patient is considered ill.
+ Find the probability that an adult woman is hyperglicemic.
+\end_layout
+
+\begin_layout Standard
+X is the leveo fo glycemic in the blood
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(X>1.56+\mu\right)=P\left(X-\mu>1.5\sigma\right)=P\left(\frac{X-\mu}{\sigma}>1.5\right)=1-\Phi\left(1.5\right)=1-0.933=0.067\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Exercise 5
+\end_layout
+
+\begin_layout Standard
+A test for students consists in 100 questions each with 2 possible answers.
+ Suppose that the student chooses the answer at random.
+ 
+\end_layout
+
+\begin_layout Itemize
+Find the approximate probability that the students answers correctly at
+ least 55 questions.
+\end_layout
+
+\begin_layout Standard
+X is the number of correct answers 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sim B\left(0.5;100\right)\approx\aleph\left(np,np\left(1-p\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with big 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(X\geq55\right)=1-P\left(X<55\right)=1-P\left(X<54.5\right)\simeq1-\Phi\left(\frac{54.5-50}{\sqrt{100*0.5^{2}}}\right)=1-\Phi\left(\frac{4.5}{5}\right)=1-\Phi\left(0.9\right)=1-0.8159=0.1841\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The value 55 have been approximated to 54.5 with standard approximation.
+ Standard approximation is used when having Bernulli variables which can
+ be approximate to a Normal variable.
+ In that case is better to do not have integer values, but spare ones.
+\end_layout
+
+\begin_layout Itemize
+The teacher decides to set a minimum score y to avoid that the student answering
+ at random pass the test.
+ Find the minimum score y such that the probability to obtain at least y
+ answering at random is 0.05.
+\end_layout
+
+\end_body
+\end_document

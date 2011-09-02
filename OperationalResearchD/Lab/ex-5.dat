@@ -1,0 +1,33 @@
+# author: Stefano Gualandi, gualandi_at_elet.polimi.it
+# Fondamenti di Ricerca Operativa
+#
+# "Ex-5" - DATI
+
+# Insieme di modelli di scarpe
+param n := 4;
+
+param m := 7;
+
+param p:   1   2  3  4  :=
+	1  10 15 12 20
+	2  9  14 11 19 
+	3  10 15 10 19
+	4  12 16 14 22
+	5  11 15 13 20
+	6  9  13 11 18
+	7  10 15 12 20;
+
+param q := 
+	1 1000
+	2 1000
+	3 1100
+	4 900
+	5 1200
+	6 1300
+	7 1300;
+
+param :      g    r  :=
+	1   45  1000
+	2   53  900
+	3   60  600
+	4   99  300;

@@ -1,0 +1,22 @@
+CASELLO
+
+             B<T
+Arrivi A->(   T   )->C Completati
+(Modello aperto)
+
+Frequenza arrivi: lambda == A/T
+Througput: X == C/T
+Tempo di servizio: S = B/C
+Utilizzo: U == B/T = X * S
+lambda = U/S < 1/S (l'utilizzo di una risorsa non può mai raggiungere il 100%)
+Tempo di servizio: S == B/C
+N = numero di auto mediamente in coda
+R = tempo medio di risposta
+Q = 
+X = S
+
+LEGGE DELL'UTILIZZO
+U = lambda * S
+
+LEGGE DI LITTLE
+N = R*X

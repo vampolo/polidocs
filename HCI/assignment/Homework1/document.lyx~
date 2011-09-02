@@ -1,0 +1,4840 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass report
+\options a4paper,12pt,oneside
+\use_default_options true
+\language italian
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Usability evaluation using Mile+ of louvre.fr"
+\pdf_author "Vincenzo Ampolo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size largest
+Politecnico di Milano
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Corso di laurea specialistica in Ingegneria Informatica
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Dipartimento di Elettronica ed Informazione
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename img/logo-polimi.png
+	lyxscale 13
+	scale 13
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing other 7
+\align center
+
+\series bold
+\size larger
+Usability evaluation using Mile+ of Louvre.fr
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align right
+Documento di:
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align right
+Vincenzo Ampolo
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align right
+matricola 750336
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing other 3
+\align center
+Anno Accademico 2010/2011
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{Roman} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Introduzione
+\end_layout
+
+\begin_layout Standard
+Questo lavoro è stato commissionato dal direttore generale del museo Louvre
+ con sede in 75058 Paris Cedex 01 Francia.
+ Il lavoro ha lo scopo di fare dei test di usabilità che coinvolgono il
+ sito del museo, che è raggiungibile tramite l'indirizzo web www.louvre.fr.
+ Il documento può essere usato come input per un'attività di 
+\emph on
+redesign
+\emph default
+ del sito del museo.
+\end_layout
+
+\begin_layout Standard
+Il lavoro focalizza le criticità nell'utilizzo dell'applicazione fornendo
+ degli esempi pratici di casi d'uso identificati tra i più comuni tra gli
+ utenti del sito.
+ Il documento è strutturato in maniera modulare.
+\end_layout
+
+\begin_layout Standard
+Nel primo capitolo si illustra il metodo (Mile+) utilizzato per valutare
+ l'usabilità del sito in oggetto.
+ 
+\end_layout
+
+\begin_layout Standard
+Nel secondo capitolo si determinano gli scenari e le euristiche, si prosegue
+ poi con un'ispezione tecnica del sito.
+\end_layout
+
+\begin_layout Standard
+Nel terzo capitolo si procede invece ai test di usabilità usando 5 utenti
+ campione a cui vengono assegnati dei 
+\emph on
+task
+\emph default
+ ben precisi presi dagli scenari.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+The Mile+ method
+\end_layout
+
+\begin_layout Section
+Mile+
+\end_layout
+
+\begin_layout Standard
+Tra tutti i metodi possibili è stato scelto il metodo Mile+ per la sua completez
+za, che comprende l'ispezione tecnica da parte di un esperto supportata
+ da test di usabilità che coinvolgono gli utenti per la valutazione di un
+ sito o una applicazione web.
+ Il metodo risulta essere molto economico ed efficace.
+ Questo metodo riesce ad alleviare, se non eliminare, i problemi dati dalle
+ singole metodologie.
+ Una valutazione guidata solo dai consigli di un esperto potrebbe portare
+ ad un risultato troppo soggettivo e quindi privo di validità.
+ Una valutazione guidata solo dagli utenti potrebbe non identificare i problemi
+ progettuali del sito o applicazione web.
+ 
+\end_layout
+
+\begin_layout Section
+Concetti chiave
+\end_layout
+
+\begin_layout Standard
+La metodologia Mile+ per l'analisi dell'usabilità di un sito web, ma in
+ generale di un'applicazione, parte dal concetto di 
+\series bold
+Usabilità
+\series default
+ definito dall'
+\series bold
+ISO 
+\series default
+\emph on
+9241-11
+\emph default
+: 
+\begin_inset Quotes eld
+\end_inset
+
+L'usabilità è l'efficacia, l'efficienza e la soddisfazione con cui specifici
+ utenti possono conseguire specifici risultati in particolari contesti
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Mile+ identifica due euristiche di usabilità:
+\end_layout
+
+\begin_layout Itemize
+Application independent
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+indipendenti dai requisiti specifici dell'applicazione.
+ Viene utilizzata l'ispezione tecnica.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Application dependent
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+dipendenti dai requisiti specifici dell'applicazione.
+ Viene utilizzata l'ispezione mediante scenari ed utenti.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/Mile+.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mile+-diagram"
+
+\end_inset
+
+Mile+ diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Come si può vedere dalla Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mile+-diagram"
+
+\end_inset
+
+ il metodo si avvale di due fasi complementari: la 
+\series bold
+technical inspection 
+\series default
+e
+\series bold
+ l'user testing.
+
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+Grazie ad un tecnico viene svolta la 
+\emph on
+technical inspection
+\emph default
+ su ogni pagina del sito, oppure viene applicata in base a degli scenari
+ di utilizzo ipotizzati nel caso di siti con numero di pagine ed informazioni
+ molto elevate.
+ L'ispezione focalizza l'attenzione sugli aspetti euristici di maggior rilievo
+ identificati dalle macrocategorie di 
+\series bold
+Navigazione, Contenuto, Tecnologia, Semiotica, Cognizione e Grafica
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+L'
+\emph on
+user testing
+\emph default
+ viene applicata per avvalorare o screditare i risultati della 
+\emph on
+technical inspection
+\emph default
+.
+ Ad ogni utente (da 5 a max 15 utenti) vengono fatti svolgere dei 
+\series bold
+task
+\series default
+, ovvero delle azioni sul sito/web application.
+ Le azioni degli utenti vengono memorizzate e valutate in modo da arrivare
+ a dei dati oggettivi che avvalorano o screditano la 
+\emph on
+technical inspection.
+\end_layout
+
+\begin_layout Standard
+Secondo la regola di Nielsen bastano 15 utenti per scoprire tutti i problemi
+ di usabilità di un sito.
+ Nielsen afferma anche che con 5 utenti si scoprono l'85% dei problemi.
+ Conviene quindi fare test di 5 utenti, correggere gli errori individuati
+ e continuare con altri 5 utenti.
+ Questa soluzione permette anche di capire se i rimedi applicati risolvono
+ davvero i problemi segnalati o meno.
+\end_layout
+
+\begin_layout Chapter
+Inspection
+\end_layout
+
+\begin_layout Section
+Definizione dei macro-scenari
+\end_layout
+
+\begin_layout Standard
+Data la quantità di dati e pagine che il Louvre contiene, un'ispezione di
+ tipo classico non è auspicabile per la mole di lavoro che questa genererebbe,
+ invece è meglio definire degli scenari di utilizzo e concentrarsi a condurre
+ un'ispezione tecnica degli scenari evidenziati.
+ Il sito del Louvre
+\begin_inset CommandInset citation
+LatexCommand cite
+key "louvre-website"
+
+\end_inset
+
+ è un tipico caso di sito che ha una moltitudine di tipologie di utenti
+ e di informazioni.
+ Ogni tipologia di utente avrà diversi scopi che lo porteranno a consultare
+ il sito.
+ Sapendo che il sito del museo si pone come una vetrina multimediale per
+ promuovere la visita del Louvre, sono state definite queste tipologie di
+ utenti
+\emph on
+:
+\end_layout
+
+\begin_layout Itemize
+Visitatore
+\end_layout
+
+\begin_layout Itemize
+Ricercatore/artista
+\end_layout
+
+\begin_layout Standard
+Queste due tipologie di utenti sono quelle per cui il sito è stato progettato.
+ Il 
+\series bold
+visitatore
+\series default
+ è una tipologia di utente più o meno colta a seconda dei casi che può non
+ aver ancora visitato il museo.
+ Il 
+\series bold
+ricercatore/artista
+\series default
+, che chiameremo per comodità semplicemente 
+\series bold
+ricercatore
+\series default
+ durante tutto il documento, è una tipologia di utente molto preparato a
+ livello artistico che potrebbe aver già visitato il museo e che vuole reperire
+ maggiori informazioni su determinate opere presenti nel Louvre, nonchè
+ versioni digitalizzate dell'opera stessa.
+\end_layout
+
+\begin_layout Standard
+Per queste due classi di utenti abbiamo cercato di definire dei 
+\emph on
+macro-scenari
+\emph default
+ logicamente rilevanti:
+\end_layout
+
+\begin_layout Itemize
+Visitatore che cerca informazioni sugli orari di apertura e su come arrivare
+ al Louvre
+\end_layout
+
+\begin_layout Itemize
+Visitatore che vuole informarsi su cosa vedrà al Louvre
+\end_layout
+
+\begin_layout Itemize
+Ricercatore che vuole trovare informazioni dettagliate su una determinata
+ opera
+\end_layout
+
+\begin_layout Itemize
+Visitatore che vuole reperire informazioni sulle ultime attività del museo
+\end_layout
+
+\begin_layout Standard
+I macro-scenari rilevati sembrano coprire gran parte dei casi di utilizzo
+ dei due utenti selezionati.
+ Tuttavia bisogna definire meglio questi 
+\emph on
+macro-scenari
+\emph default
+, in modo da avere degli scenari utili per la nostra analisi.
+ Una volta definiti gli scenari si potrà proseguire con l'ispezione del
+ sito web.
+\end_layout
+
+\begin_layout Section
+Definizione degli scenari
+\end_layout
+
+\begin_layout Standard
+Gli scenari sono indispensabili per procedere sia all'ispezione tecnica
+ che ai test con utenti.
+ Essi definiscono in maniera più puntuale le caratteristiche degli utenti,
+ il loro livello culturare e la loro situazione socio/economica; allo stesso
+ modo definiscono chiaramente i passaggi da compiere per eseguire il 
+\series bold
+goal
+\series default
+ richiesto.
+ Nelle seguenti tabelle si definiscono gli scenari di utilizzo del sito
+ del Louvre:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="50page%">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scenario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mark, giovane americano che ha finito l'high school da qualche anno, si
+ trova per una vacanza a Parigi.
+ Durante le sua esperienza scolastica ha avuto modo di frequentare numerose
+ lezioni di storia dell'arte, dedicate ad opere ospitate al museo Louvre.
+ Vuole quindi trovare informazioni su come arrivare al Louvre e quali sono
+ gli orari di apertura.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User profile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visitatore
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Goal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visitare il Louvre in uno specifico giorno
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tasks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Trovare informazioni su come arrivare al museo
+\end_layout
+
+\begin_layout Itemize
+Trovare informazioni sugli orari di apertura del museo
+\end_layout
+
+\begin_layout Itemize
+Trovare informazioni sugli specifici eventi nella data in cui l'utente visiterà
+ il museo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Scenario 1
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Scenario-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="50page%">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scenario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jacob, inglese lavoratore vicino alla pensione, ha pianificato da lungo
+ tempo una visita al Louvre.
+ Qualche giorno prima della visita, si collega al sito per cercare di trovare
+ informazioni sulle opere più importanti del museo, in modo da poter apprezzar
+ meglio le opere quando le potrà vedere di persona.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User profile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visitatore
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Goal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cercare informazioni sulle opere più importanti del Louvre
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tasks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Ricercare le opere più famose ospitate al Louvre
+\end_layout
+
+\begin_layout Itemize
+Ricercare informazioni sulle opere trovate
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Scenario-2"
+
+\end_inset
+
+Scenario 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="50page%">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scenario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vittorio, critico d'arte italiano dalla cultura molto vasta, vuole paragonare
+ un'opera che sta valutando con un'opera ospitata al Louvre.
+ Vuole quindi trovare informazioni dettagliate e photo dell'opera che permettano
+ uno studio approfondito anche a distanza.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User profile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ricercatore
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Goal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ricercare informazioni e materiale multimediale dettagliate su una determinata
+ opera
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tasks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Ricercare una determinata opera ospitata al Louvre
+\end_layout
+
+\begin_layout Itemize
+Ricercare descrizione dettagliata dell'opera
+\end_layout
+
+\begin_layout Itemize
+Ricercare materiale multimediale dell'opera
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Scenario 3
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Scenario-3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="50page%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scenario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Andrea, giovane neolaureato italiano, abita a Parigi da diversi anni.
+ E' già stato più di una volta al Louvre e vuole sapere se nel prossimo
+ fine settimana ci saranno degli eventi al museo, così da poter partecipare.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User profile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visitatore
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Goal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sapere quali sono i prossimi eventi in programma al Louvre nel brevissimo
+ e breve periodo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tasks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Ricercare i prossimi eventi che si terranno al museo
+\end_layout
+
+\begin_layout Itemize
+Ricercare descrizione dettagliata dell'evento
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Scenario 4
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Scenario-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Definizione delle euristiche
+\end_layout
+
+\begin_layout Standard
+Per poter proseguire con una 
+\emph on
+inspection
+\emph default
+ corretta, bisogna prima stabilire quali sono le euristiche rilevanti per
+ l'analisi del sito del Louvre.
+ La letteratura
+\begin_inset CommandInset citation
+LatexCommand cite
+key "webboard"
+
+\end_inset
+
+ definisce varie euristiche che posso essere utilizzate.
+ Dopo una completa e profonda analisi è stato deciso che solo le seguenti
+ euristiche sono rilevanti:
+\end_layout
+
+\begin_layout Itemize
+Content
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Text: il testo utilizzato deve essere accurato, coerente, coprire gli argomenti
+ trattati e conciso
+\end_layout
+
+\begin_layout Itemize
+General communication quality: il testo non deve contenere errori e i contenuti
+ multimediali devono essere coerenti con il contenuto del testo a cui si
+ riferiscono
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Navigation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Navigation within a topic: la navigazione in un argomento deve essere correttame
+nte frammentata in sottopagine; deve essere chiaro all'utente in quale argomento
+ si trova.
+\end_layout
+
+\begin_layout Itemize
+Navigation withing a group of topics: deve essere intuitiva la navigazione
+ tra gli argomenti e la ricerca dei gruppi di argomenti che interessano
+\end_layout
+
+\begin_layout Itemize
+Overall navigation: i contenuti devono essere fruibili da chiunque ed i
+ landmarks devono essere facilmente individuabili
+\end_layout
+
+\begin_layout Itemize
+Guided tour navigation: la navigazione del tour-virtuale deve essere intuitiva,
+ deve seguire la velocità dell'utente e non deve sovraccaricare di informazioni
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Semiotics
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+String of characters: non ci devono essere ambiguità dei termini utilizzati,
+ non ci devono essere termini diversi con lo stesso significato e icone
+ e i segni devono essere intuitivi
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Cognitive
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Single page: in una singola pagina non ci devono essere troppe informazioni
+ e deve essere facile raggiungere l'informazione ricercata senza dover leggere
+ l'intera pagina
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Graphic
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Overall graphic design: la grafica del sito deve rispecchiare l'immagine
+ del brand, il sito deve usare lo stesso set di colori in ogni pagina, il
+ background deve aiutare e non ostacolare la fruizione dei contenuti.
+ Colore, dimensione e tipo del test devono essere adeguati per il sito web.
+ Deve essere intuitivo capire dove sono i link ad altre pagine.
+ Il layout deve essere simile per ogni pagina del sito.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Technology
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Errors management: il sito deve reagire in maniera adeguada agli errori
+\end_layout
+
+\begin_layout Itemize
+Browser compatibility: il sito deve essere visualizzato correttamente tra
+ i vari browser disponibili.
+ Nel dettaglio il sito verrà testato usando Google Chrome, Mozilla Firefox
+ 3.6 e Internet Explorer 8
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Per ogni euristica valutata è stato deciso di assegnare un punteggio, in
+ modo da valutare quantitativamente se le euristiche sono rispettate o meno.
+ Il punteggio finale per ogni scenario è dato dalla media pesata di tutte
+ le euristiche valutate, attribuendo importanza doppia alle euristiche di
+ 
+\series bold
+contenuto
+\series default
+ e 
+\series bold
+navigazione
+\series default
+, essendo il sito del Louvre un sito ad alto contenuto informativo.
+ Ogni euristica ha un valore che va da 0 a 5, dove 0 significa che l'euristica
+ in analisi non ha senso per lo scenario specificato, mentre i punteggi
+ da 1 a 5 significano rispettivamente 
+\begin_inset Quotes eld
+\end_inset
+
+euristica non rispettata
+\begin_inset Quotes erd
+\end_inset
+
+ ed 
+\begin_inset Quotes eld
+\end_inset
+
+euristica completamente rispettata
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Inspection
+\end_layout
+
+\begin_layout Standard
+Dopo aver definito nel dettaglio gli scenari e le euristiche che verranno
+ analizzate, è possibile proseguire con l'
+\emph on
+inspection
+\emph default
+ tecnica del sito del Louvre
+\begin_inset CommandInset citation
+LatexCommand cite
+key "louvre-website"
+
+\end_inset
+
+da parte di una persona specializzata in analisi di usabilità.
+ Data la complessità del sito in oggetto di valutazione si eseguiranno gli
+ scenari utilizzati e si valuteranno le euristiche per ogni pagina visualizzata.
+\end_layout
+
+\begin_layout Subsection
+Prima inspection
+\end_layout
+
+\begin_layout Standard
+La prima 
+\emph on
+inspection
+\emph default
+ riguarda il primo scenario ipotizzato nella Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Scenario-1"
+
+\end_inset
+
+.
+ Appena aperto il browser Google Chrome sulla pagina del Louvre è emerso
+ il primo problema che viola l'euristica sulla tecnologia.
+ Il sito infatti non è capace di capire quale sia la lingua dell'utente
+ e imposta la lingua di default in francese.
+ La stessa cosa succede anche per gli altri due browsers.
+ Sarebbe stato meglio impostare la lingua di default, nel caso non fosse
+ possibile rilevarla, in inglese, essendo quest'ultima molto più diffusa,
+ a livello mondiale, del francese.
+ Inoltre non sono disponibili più di quattro lingue per la visualizzazione
+ del sito.
+ Pur essendo, quello della lingua di default, un problema prettamente tecnologic
+o, ci si trova di fronte a una seconda problematica: può il sito del museo
+ Louvre supportare solo Inglese, Francese, Cinese semplificato e Giapponese?
+ Considerando l'importanza mondiale del Louvre e il numero di visitatori
+ annuali, la fruizione del sito web in queste sole lingue è molto riduttiva.
+ Inoltre il sito in oggetto non ha passato la validazione W3C
+\begin_inset CommandInset citation
+LatexCommand cite
+key "w3c-validator"
+
+\end_inset
+
+ riportando 
+\series bold
+136 Errors and 158 warning(s)
+\series default
+.
+ La mancata osservanza degli standard HTML porta ad un sicuro problema di
+ interoperabilità tra differenti browsers.
+ Si nota anche una incoerenza nei colori del menu: l'ultima entry del menu
+ ha un colore diverso dalle altre, perchè? La homepage del sito, che è possibile
+ vedere in figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Homepage"
+
+\end_inset
+
+, visualizza i problemi elencati.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/louvre-home.png
+	lyxscale 70
+	scale 30
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Homepage"
+
+\end_inset
+
+Homepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In generale il layout della pagina risulta intuitivo e ben fatto.
+ L'informazione sembra essere ben organizzata nelle varie entry del menu
+ principale.
+ Tuttavia nei menu si riscontrano vari problemi.
+ Il primo tra tutti è l'entry 
+\series bold
+Overview
+\series default
+ presente in tutti i menu che non aggiunge nessun contenuto informativo
+ e confonde l'utente.
+ Ogni overview visualizza la stessa pagina che si visualizza se si va in
+ una pagina identificata dai landmarks.
+ Questo approccio confonde l'utente che si ritorva due link per la stessa
+ pagina, e costituisce un ostacolo alla creazione della mappa mentale da
+ parte dell'utente.
+ La pagina che fa vedere le informazioni su come raggiungere il museo è
+ la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Come raggiungere il museo"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/louvre-location&entraces.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Come raggiungere il museo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+C'è un'evidente discordanza tra il contenuto del testo e dell'immagine principal
+e nella pagina: l'utente, leggendo le informazioni su come arrivare al museo,
+ non si aspetta una mappa del museo stesso ma una mappa che faccia vedere
+ dove il Louvre è localizzato a Parigi.
+ Vorrebbe anche vedere il percorso, colorato nella mappa, di come raggiungere
+ il museo.
+ Non c'è 
+\emph on
+overflow
+\emph default
+ di contenuti e risultano molto utili le icone di condivisione dell'informazione
+ per email e per stampare le informazioni visualizzate.
+ Lo scenario è quindi concluso ma sono emersi vari 
+\emph on
+pitfals
+\emph default
+ che deteriorano considerevolmente l'
+\emph on
+user experience
+\emph default
+.
+ Il giudizio complessivo sullo scenario è dato dalla tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Risultati-scenario-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Euristica
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Peso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Score
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Content
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Navigation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Semiotics
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cognitive
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Graphic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Technology
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3.125
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Risultati scenario 1
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Risultati-scenario-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Seconda Inspection
+\end_layout
+
+\begin_layout Standard
+La seconda 
+\emph on
+inspection
+\emph default
+ riguarda lo scenario 2 ipotizzato nella Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Scenario-2"
+
+\end_inset
+
+.
+ Questo scenario permette di esplorare più pagine rispetto al precedente
+ scenario, data la sua complessità intrinseca.
+ La raccolta delle opere è organizzata secondo dipartimenti: è un tipico
+ esempio di 
+\emph on
+grouping listing
+\emph default
+ in cui un'icona caratterizza il dipartimento e le opere ivi contenute.
+\end_layout
+
+\begin_layout Standard
+L'accesso alla collezione delle opere pone i primi problemi all'utente:
+ c'è una discrepanza semiotica tra le icone che caratterizzano un dipartimento
+ e il dipartimento stesso.
+ In particolare ci sono diverse mappature possibili tra le icone e i gruppi
+ che rappresentano.
+ Per fortuna esiste una lista testuale dei dipartimenti che fornisce all'utente
+ un accesso accettabile ai vari dipartimenti.
+ Le diverse mappature possibili sono evidenziate nella Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Collections"
+
+\end_inset
+
+: si vede come la collezione 
+\series bold
+sculture
+\series default
+ può essere mappata dalle icone da cui dipartono le frecce azzurre, lo stesso
+ vale per la collezione 
+\series bold
+paintings
+\series default
+ a cui arrivano le frecce viola, e la collezione 
+\series bold
+Greek, Etruscan and Roman Antiquities
+\series default
+ a cui tendono le frecce marroni.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/louvre-collection.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Collections
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Collections"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Questa ambiguità semiotica disorienta l'utente.
+ Una volta raggiunta la collezione desiderata risulta molto intuitiva la
+ navigazione verso i 
+\series bold
+Selected works
+\series default
+, ovvero le opere selezionate.
+ In alto nella pagina è presente una barra di navigazione che informa l'utente
+ in quale pagina si trova e come tornare indietro.
+ E' possibile ri-suddividere i 
+\series bold
+selected works
+\series default
+ per storicità e in un riquadro vengono rappresentate, tramite foto, le
+ opere selezionate.
+ Se per la navigazione non ci sono particolari problemi, dal punto di vista
+ grafico si riscontrano delle criticità: il 
+\emph on
+pop-up
+\emph default
+ che appare quando l'utente va con il cursore sopra un'opera interferisce
+ con l'immagine ingrandita dell'opera stessa.
+ Ciò degrada notevolmente l'esperienza utente.
+ Il comportamento analizzato è molto evidente nella Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Overlap-pop-up"
+
+\end_inset
+
+ dove il calice è completamente oscurato dal 
+\emph on
+pop-up
+\emph default
+ che non aggiunge nessun contenuto informativo aggiuntivo rispetto alle
+ informazioni visualizzate a destra dell'immagine ingrandita.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/louvre-collection-overlap.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Overlap pop-up
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Overlap-pop-up"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cliccando sull'icona dell'opera selezionata è poi possibile accedere alla
+ descrizione dettagliata dell'opera.
+ Nella visualizzazione della descrizione emergono vari problemi: la navigazione
+ è ambigua, non si capisce se ci sono più pagine della descrizione o se
+ quest'ultima risiede tutta nella pagina visualizzata, il font è poco spaziato
+ e troppo piccolo per permettere una lettura agevole.
+ Queste criticità sono ben evidenziate nella Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Descrizione-opera"
+
+\end_inset
+
+.
+ Il contenuto informativo del test è allineato con l'immagine visualizzata
+ e non si evincono errori lessicali, grammaticali e ortografici.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/louvre-description.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Descrizione opera
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Descrizione-opera"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dal punto di vista tecnologico non ci sono state particolari mancanze, tolto
+ il fatto che le pagine analizzate non hanno passato correttamente la validazion
+e HTML del W3C
+\begin_inset CommandInset citation
+LatexCommand cite
+key "w3c-validator"
+
+\end_inset
+
+.
+ Anche se è stato possibile raggiungere il goal prefissato, l'
+\emph on
+user experience
+\emph default
+ è stata molto compromessa da problemi di semiotica, navigazione e grafica.
+ La tabella finale degli 
+\emph on
+score
+\emph default
+ per lo scenario è quindi la seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Euristica
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Peso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Score
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Content
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Navigation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Semiotics
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cognitive
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Graphic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Technology
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2.875
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Risultati scenario 2
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Risultati-scenario-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Terza Inspection
+\end_layout
+
+\begin_layout Standard
+La terza 
+\emph on
+inspection
+\emph default
+ si basa sullo scenario 3 definito dalla Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Scenario-3"
+
+\end_inset
+
+.
+ Il goal è quello di ricercare una descrizione dettagliata di un'opera per
+ eseguire degli studi.
+ Per far questo si userà la barra di ricerca disponibile in alto a destra
+ nel sito.
+ Si nota subito che non tutte le opere del museo sono presenti nel sito,
+ cosa alquanto plausibile data la grande quantità di opere esposte al Louvre.
+ L'opera che si è deciso di ricercare è la 
+\begin_inset Quotes eld
+\end_inset
+
+July 28: Liberty Leading the People
+\begin_inset Quotes erd
+\end_inset
+
+ di Delacroix.
+ La ricerca, come la navigazione del sito, risulta abbastanza rallentata
+ rispetto agli scenari precedenti.
+ Ricercando esattamente 
+\begin_inset Quotes eld
+\end_inset
+
+July 28: Liberty Leading the People
+\begin_inset Quotes erd
+\end_inset
+
+ nella barra di ricerca della homepage l'opera viene effettivamente trovata.
+ Il problema principale è, però, che il risultato atteso è solo il terzo
+ elemento e non il primo come ci si potrebbe aspettare e come si vede nella
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ricerca"
+
+\end_inset
+
+.
+ I primi due elementi suggeriscono solo una visita tematica che difficilmente
+ può essere di rilevanza in una ricerca, dato che una visita tematica ipotizza
+ una fruizione sequenziale, e quindi non per ricerca, del sito.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/louvre-search.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ricerca
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ricerca"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dopo aver cliccato nella 
+\emph on
+entry
+\emph default
+ corretta, appare una descrizione dettagliata dell'opera.
+ E' possibile ingrandire la photo dell'opera ad un livello accettabile per
+ cogliere i particolari molto utili al tipo di utente dello scenario, ovvero
+ un ricercatore.
+ Risultano ancora presenti però i problemi di visualizzazione del testo
+ che erano stati diagnosticati nello scenario precendente: il font è poco
+ spaziato e troppo piccolo per essere fruito agevolmente.
+ In questo caso l'euristica di semiotica non è applicabile.
+ Dal punto di vista tecnologico la pagina è visualizzata correttamente in
+ tre browser differenti ma non ha passato la validazione W3C
+\begin_inset CommandInset citation
+LatexCommand cite
+key "w3c-validator"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Il goal è stato raggiunto con qualche difficoltà iniziale causata da una
+ non pertinenza dei contenuti nella ricerca e di grafica, la tabella degli
+ 
+\emph on
+score
+\emph default
+ dello scenario è quindi la seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Euristica
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Peso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Score
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Content
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Navigation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Semiotics
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cognitive
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Graphic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Technology
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Risultati scenario 3
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Risultati-scenario-3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Quarta Inspection
+\end_layout
+
+\begin_layout Standard
+La quarta 
+\emph on
+inspection
+\emph default
+ si base sullo svolgimento del goal dello scenario 4 descritto nella Tabella
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Scenario-4"
+
+\end_inset
+
+.
+ Il goal dello scenario è quello di sapere quali sono gli eventi al Louvre
+ nel brevissimo e nel breve periodo.
+ In particolare si vedranno quali sono le mostre temporanee tematiche.
+\end_layout
+
+\begin_layout Standard
+La navigazione per quest 
+\emph on
+topic
+\emph default
+ è particolarmente facile grazie al landmark 
+\series bold
+Exibitions
+\series default
+ che ha come sotto menù: 
+\series bold
+Overview
+\series default
+,
+\series bold
+ Current Exibitions
+\series default
+,
+\series bold
+ Future Exibitions 
+\series default
+e
+\series bold
+ Past Exibitions
+\series default
+.
+ 
+\series bold
+Overview
+\series default
+ non aggiunge nessun contenuto informativo, anzi, confonde l'utente che
+ si ritrova una 
+\emph on
+entry
+\emph default
+ in più nel menù che punta alla stessa pagina a cui punta 
+\series bold
+Exibitions
+\series default
+.
+ Su 
+\series bold
+Current Exibitions
+\series default
+ l'utente trova una lista ordinata temporalmente delle esposizioni temporanee.
+ Cliccando su una di esse appare la descrizione completa.
+ La navigazione, a parte il landmark confusionario, è abbastanza fluida
+ e ordinata.
+ Il contenuto informativo è sufficiente a capire il tema dell'esposizione
+ nel dettaglio, tuttavia il font utilizzato è ancora troppo piccolo e poco
+ spaziato.
+ La navigazione nella pagina descrittiva è nuovamente ambigua come quando
+ si visionano le opere: non si capisce se i controlli sopra e sotto la descrizio
+ne simboleggino controlli della descrizione o dell'intera lista delle esibizioni
+ temporanee.
+ 
+\end_layout
+
+\begin_layout Standard
+Per scoprire le esposizioni temporanee nel futuro basta andare su 
+\series bold
+Future Exibitions
+\series default
+.
+ Le informazioni sono correttamente organizzate e coerenti con la data corrente.
+ Dal punto di vista tecnologico persiste il problema della validazione W3C
+\begin_inset CommandInset citation
+LatexCommand cite
+key "w3c-validator"
+
+\end_inset
+
+ ma la visualizzazione è possibile sui tre browser di riferimento senza
+ particolari stravolgimenti.
+\end_layout
+
+\begin_layout Standard
+La tabella degli score per questo scenario che tiene conto di tutta l'argomentaz
+ione precendete è la Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Risultati-scenario-4"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Euristica
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Peso
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Score
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Content
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Navigation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Semiotics
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cognitive
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Graphic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Technology
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4.14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Risultati scenario 4
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Risultati-scenario-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusioni
+\end_layout
+
+\begin_layout Standard
+Il sito in oggetto non è esente da problemi sostanziali di usabilità che
+ ne pregiudicano una fruizione agevole.
+ Dal punto di vista grafico la dimensione e la spaziatura non corretta del
+ font impegnano l'utente eccessivamente in qualsiasi scenario utilizzato.
+ In qualche scenario sono emersi problemi semiotici/cognitivi, come nella
+ lista in cui viene esposta la raccolta del Louvre nella seconda 
+\emph on
+inspection
+\emph default
+.
+ Dal punto di vista tecnologico la compatibilità con lo standard HTML definito
+ dal W3C deve essere un requisito fondamentale per il sito di uno dei musei
+ più importanti al mondo.
+\end_layout
+
+\begin_layout Standard
+In generale il sito è usufruibile ma l'
+\emph on
+user experience
+\emph default
+ non raggiunge mai i livelli che si potrebbero ottenere.
+\end_layout
+
+\begin_layout Chapter
+User testing
+\end_layout
+
+\begin_layout Standard
+In questo capitolo si riporteranno i risultati dell'
+\series bold
+User testing
+\series default
+.
+ L'user testing è utilizzata in Mile+ per avvalorare o screditare i risultati
+ derivati dall'
+\emph on
+inspection
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+Definizione degli scenari
+\end_layout
+
+\begin_layout Standard
+Gli scenari rimangono sostanzialmente invariati per quanto riguarda i
+\series bold
+ goals
+\series default
+ e i 
+\series bold
+task
+\series default
+.
+ Per quanto riguarda invece gli utenti sono tutti di età compresa tra 20
+ e 27 anni e tutti studenti universitari di diverse facoltà e università
+ a Milano.
+ E' stato infatti impossibile trovare utenti con esattamente gli stessi
+ profili degli scenari usati nell'
+\series bold
+inspection
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Tuttavia, durante la fase di selezione degli utenti, si è cercato di scegliere
+ soggetti che hanno un'affinità culturale e di esperienze con gli utenti
+ definiti dagli scenari e che quindi più si avvicinano ai casi ipotizzati.
+\end_layout
+
+\begin_layout Standard
+Per valutare gli 
+\series bold
+user testing
+\series default
+ sono stati stabiliti dei 
+\series bold
+driver
+\series default
+ sia qualitativi che quantitativi.
+ Per stimare qualitativamente l'
+\emph on
+user experience 
+\emph default
+è stato osservato il comportamento dell'utente, le sue espressioni facciali
+ e le sue affermazioni davanti al pc.
+ Per una stima quantitativa sono stati valutati i tempi richiesti per il
+ completamento, il grado di completamento ed il numero di interazioni fatte.
+\end_layout
+
+\begin_layout Section
+Modalità di esecuzione
+\end_layout
+
+\begin_layout Standard
+I test sono stati eseguiti singolarmente per ogni utente.
+ L'utente, previa garanzia che non aveva mai visto il sito del Louvre, è
+ stato fatto accomodare nella postazione di testing che è disponibile in
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Postazione-per-user"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/postazione.jpg
+	lyxscale 30
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Postazione per user testing
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Postazione-per-user"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prima di iniziare ogni test è stato chiarito con l'utente che si voleva
+ valutare il sistema e non l'utente stesso.
+ Ciò è essenziale per mettere a proprio agio l'utente e per non alterare
+ le misurazioni effettuate durante l'esecuzione del test.
+ L'utente è stato pure informato che il suo comportamento sarebbe stato
+ registrato e cancellato subito dopo la valutazione del grado di 
+\emph on
+user experience
+\emph default
+.
+ Si è anche chiarito con l'utente che non è necessario riuscire ad eseguire
+ tutti i 
+\emph on
+task
+\emph default
+ e che se avesse trovato difficoltà non sarebbe stato considerato un suo
+ errore, ma un errore del sistema, forse poco intuitivo.
+\end_layout
+
+\begin_layout Standard
+Per sgravare l'utente circa la conoscenza dell'effettivo compito che doveva
+ svolgere, si è cercato di semplificarne l'operato grazie ad una lista di
+ compiti da svolgere.
+ I compiti sono stati presi dagli scenari e sono la somma di tutti i 
+\emph on
+task
+\emph default
+ partendo dal primo scenario al quarto, togliendo i 
+\emph on
+task
+\emph default
+ ripetuti.
+ I compiti, o 
+\emph on
+task
+\emph default
+, così ottenuti sono stati dati all'utente tramite un foglio prima di iniziare
+ il test.
+ Il foglio consegnato agli utenti aveva i seguenti 
+\emph on
+task
+\emph default
+:
+\end_layout
+
+\begin_layout Enumerate
+Trovare informazioni su come arrivare al museo
+\end_layout
+
+\begin_layout Enumerate
+Trovare informazioni sugli orari di apertura del museo
+\end_layout
+
+\begin_layout Enumerate
+Trovare informazioni sulle specifiche esibizioni presenti al museo il 9
+ Novembre 2010
+\end_layout
+
+\begin_layout Enumerate
+Ricercare l'opera 
+\begin_inset Quotes eld
+\end_inset
+
+July 28: Liberty Leading the People
+\begin_inset Quotes erd
+\end_inset
+
+ di Delacroix con una descrizione dettagliata
+\end_layout
+
+\begin_layout Enumerate
+Ricercare le prossime esibizioni che saranno ospitate al museo con descrizione
+ dettagliata
+\end_layout
+
+\begin_layout Standard
+Al termine degli scenari è stato fatto svolgere dall'utente un questionario
+ ed è stato fatto un colloquio per completare l'analisi dell'
+\emph on
+user experience
+\emph default
+ e per verificare che tutti i dati rilevanti fossero emersi dall'analisi
+ qualitativa e quantitativa del test.
+\end_layout
+
+\begin_layout Standard
+I risultati sono stati raccolti in una tabella per ogni test effettuato
+ e sono accompagnati da un breve commento che riepiloga sia il questionario
+ che la discussione con l'utente.
+ I risultati sono esposti nella prossima sezione del documento.
+\end_layout
+
+\begin_layout Section
+Risultati
+\end_layout
+
+\begin_layout Subsection
+Primo utente
+\end_layout
+
+\begin_layout Standard
+Il primo utente ha completato correttamente tutti i 
+\emph on
+task
+\emph default
+ assegnati (success rate del 100%) secondo la seguente tabella:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Task #
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iterazioni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo (s)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+115
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+54
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+104
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Primo user test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nel colloquio è emerso che durante il 
+\emph on
+task
+\emph default
+ #1 le informazioni a disposizione dell'utente erano incomplete, dato che
+ sarebbe stato più opportuno mostrare una mappa di come raggiungere il Louvre
+ e non una mappa del Louvre.
+ Durante il 
+\emph on
+task
+\emph default
+ #3, ovvero quello che stabilisce di 
+\begin_inset Quotes eld
+\end_inset
+
+trovare informazioni sulle specifiche esibizioni presenti al museo il 9
+ Novembre 2010
+\begin_inset Quotes erd
+\end_inset
+
+, è emerso che sarebbe stato più utile poter disporre di un calendario in
+ grado di poter visualizzare le attività che venivano svolte al museo in
+ un determinato giorno.
+\end_layout
+
+\begin_layout Standard
+Il giudizio generale dell'utente è che il sito è poco utilizzabile, poco
+ flessibile e la combinazione di colori utilizzata non è particolarmente
+ accattivante.
+ E' da notare come il 
+\emph on
+task
+\emph default
+ #1, che è oggettivamente abbastanza semplice, abbia impiegato 7 iterazioni
+ e ben 115 secondi.
+ Un tempo eccessivo dato che il 
+\emph on
+task
+\emph default
+ #1 è quello di 
+\begin_inset Quotes eld
+\end_inset
+
+trovare informazioni su come arrivare al museo
+\begin_inset Quotes erd
+\end_inset
+
+, ovvero una delle informazioni più importanti di tutto il sito.
+ Ciò non accade negli altri 
+\emph on
+task
+\emph default
+.
+ Questo è probabilmente un sintomo dell'interfaccia poco intuitiva, che
+ necessita di essere esplorata anche per raggiungere l'informazione più
+ semplice.
+\end_layout
+
+\begin_layout Subsection
+Secondo utente
+\end_layout
+
+\begin_layout Standard
+Il secondo utente ha completato correttamente tutti i 
+\emph on
+task
+\emph default
+ assegnati (success rate del 100%) secondo la seguente tabella:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Task #
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iterazioni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo (s)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+174
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+202
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Secondo user test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rispetto al primo utente si rivela un generale aumento del numero delle
+ iterazioni e dei tempi per compiere ogni 
+\emph on
+task
+\emph default
+.
+ Si nota come il 
+\emph on
+task
+\emph default
+ #1 continua ad essere quello che, pur essendo molto semplice, necessita
+ di qualche iterazione affinchè l'utente prenda confidenza con il sito.
+ Si rivela inoltre come il campo di ricerca non è di utilizzo immediato
+ per l'utente che nel 
+\emph on
+task
+\emph default
+ #4 ha dovuto sfogliare tutte le entry prima di quella corretta.
+\end_layout
+
+\begin_layout Standard
+In generale il giudizio dell'utente è che il font troppo piccolo disturba
+ la lettura e che le informazioni non sono esposte in maniera intuitiva,
+ soprattutto durante il 
+\emph on
+task
+\emph default
+ #4
+\end_layout
+
+\begin_layout Subsection
+Terzo utente
+\end_layout
+
+\begin_layout Standard
+Il terzo utente ha completato correttamente tutti i 
+\emph on
+task
+\emph default
+ assegnati (success rate del 100%) secondo la seguente tabella:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Task #
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iterazioni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo (s)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+83
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+264
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Terzo user test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rispetto agli utenti precedenti il terzo utente è in media più veloce nell'esecu
+zione dei 
+\emph on
+task
+\emph default
+, tuttavia emerge sia dai dati che dal colloquio che la ricerca è di difficile
+ utilizzo ed è soprattutto fuorviante a causa del riquadro che spunta sulla
+ destra e che non dà risultati utili per la ricerca effettuata.
+ Rimane costante il fatto che, anche per vedere un dato essenziale come
+ richiesto dal 
+\emph on
+task
+\emph default
+ #1, l'utente debba prima familiarizzare con il sito prima di poter trovare
+ l'informazione cercata.
+\end_layout
+
+\begin_layout Standard
+Il giudizio dell'utente sul sito è stato che il sito è usufruibile, a parte
+ il font troppo piccolo per una corretta visualizzazione.
+\end_layout
+
+\begin_layout Subsection
+Quarto utente
+\end_layout
+
+\begin_layout Standard
+Il quarto utente non ha completato correttamente tutti i 
+\emph on
+task
+\emph default
+ assegnati (success rate del 80%) secondo la seguente tabella:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Task #
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iterazioni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo (s)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+207
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+74
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+113
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Quarto user test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'utente in oggetto non è stato in grado di completare il 
+\emph on
+task
+\emph default
+ #3.
+ Analizzando il comportamento dell'utente si è visto come il 
+\emph on
+task
+\emph default
+ non sia stato completato non perchè l'utente effettivamente non fosse riuscito
+ a visualizzare la pagina corretta, ma perchè il formato della data non
+ era quello che l'utente si aspettava e quindi non è stato in grado di riconosce
+re la pagina come una pagina utile in cui cercare l'informazione che richiedeva
+ il 
+\emph on
+task
+\emph default
+ #3.
+ Si è inoltre notato che l'utente tendeva a leggere tutto il contenuto della
+ pagina prima di processare l'informazione e procedere con il prossimo link
+ e ciò ha fatto impiegare più tempo per raggiungere i goal.
+\end_layout
+
+\begin_layout Standard
+Il commento dell'utente sul sito è stato molto negativo, sia perchè non
+ era disponibile il sito in italiano e sia perchè le informazioni avevano
+ un layout a lui poco familiare.
+\end_layout
+
+\begin_layout Subsection
+Quinto utente
+\end_layout
+
+\begin_layout Standard
+Il quinto utente ha completato correttamente tutti i 
+\emph on
+task
+\emph default
+ assegnati (success rate del 100%) secondo la seguente tabella:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Task #
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iterazioni
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo (s)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+137
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+77
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+128
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Quinto user test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'utente in oggetto si è lamentato verbalmente dell'assenza della disponibilità
+ della lingua italiana per visionare il sito.
+ Ha trovato molto comodo il maggiordomo virtuale che lo ha accompagnato
+ durante la sua esperienza nell'uso del sito.
+ Rispetto agli altri utenti, l'utente in oggetto è stato abbastanza veloce
+ a compiere i 
+\emph on
+task
+\emph default
+, ma rimane da sottolineare il fatto che il primo task ha comunque impiegato
+ più del tempo effettivamente necessario per prendere dimestichezza con
+ il sistema.
+\end_layout
+
+\begin_layout Standard
+L'utente ha giudicato il sito sufficientemente usabile, anche se il font
+ e i colori utilizzati non aiutano la lettura.
+\end_layout
+
+\begin_layout Section
+Conclusioni
+\end_layout
+
+\begin_layout Standard
+Dall'
+\emph on
+user testing
+\emph default
+ emergono problemi legati ai colori utilizzati, alle lingue disponibili,
+ all'organizzazione dei contenuti e alla gestione delle date.
+ Vengono proposti dagli utenti stessi modalità di interazione a loro più
+ familiari, come quella del calendario per ricercare gli eventi in un determinat
+o giorno al museo.
+ Emerge come per ricercare anche un'informazione semplice, ad esempio le
+ informazioni per raggiungre il museo con i mezzi pubblici, l'utente debba
+ spendere in media più di 100 secondi per capire in quale sottomenù potrebbe
+ stare l'informazione che cerca.
+\end_layout
+
+\begin_layout Standard
+In generale nessuno degli utenti si è sentito a proprio agio navigando il
+ sito e difficilmente ritornerebbe sul sito, se non strettamente necessario.
+\end_layout
+
+\begin_layout Chapter
+Conclusioni
+\end_layout
+
+\begin_layout Standard
+Il sito del Louvre non è esente da seri problemi di usabilità.
+ Dall'analisi Mile+ si evince come l'
+\emph on
+inspection
+\emph default
+ tecnica, avvalorata dai risultati dell'user testing, abbia effettivamente
+ scoperto molti dei problemi di usabilità.
+\end_layout
+
+\begin_layout Standard
+Alcune tra le modifiche più semplici potrebbero essere le seguenti:
+\end_layout
+
+\begin_layout Itemize
+Validare tutte le pagine del sito secondo lo standard HTML W3C per ridurre
+ l'incompatibilità browser
+\end_layout
+
+\begin_layout Itemize
+Rimuovere le entry 
+\series bold
+Overview
+\series default
+ in tutti i landmarks per ridurra il livello di confusione mentale dell'utente
+ che esplora il sito
+\end_layout
+
+\begin_layout Itemize
+Supportare più lingue
+\end_layout
+
+\begin_layout Itemize
+Nella pagina di come raggiungere il museo mettere una mappa satellitare
+ (tipo Google Maps) in cui far vedere come raggiungere il museo con i mezzi
+ pubblici e/o dall'aereoporto per contestualizzare l'informazione testuale
+\end_layout
+
+\begin_layout Itemize
+Cambiare le icone utilizzate sostituendole con altre con una grafica più
+ accattivante in modo da mettere in risalto in contenuto interattivo del
+ sito
+\end_layout
+
+\begin_layout Itemize
+Nella pagina 
+\series bold
+Overwiew of Departments
+\series default
+ cambiare le icone che identificano un dipartimento con altre più esplicative
+ e aggiungere un pop-up o del testo che aiuti l'utente ad identificare il
+ dipartimento.
+\end_layout
+
+\begin_layout Itemize
+Quando si sfogliano le liste delle opere e si passa il cursore sopra un'opera
+ il pop-up di informazioni non dovrebbe comparire questo eviteraebbe all'utente
+ l'
+\emph on
+overflow 
+\emph default
+di informazioni duplicate e permetterebbe all'utente di vedere l'immagine
+ dell'opera stessa
+\end_layout
+
+\begin_layout Itemize
+Icone di navigazione quando si visualizza la descrizione di un'opera più
+ intuitive e accattivanti e chiarire se la navigazione tramite le icone
+ è riferita alla descrizione dell'opera o alla lista delle opere
+\end_layout
+
+\begin_layout Itemize
+Campo di ricerca che fa vedere come prime entry le ricerche esatte di ciò
+ che l'utente scrive nel campo di ricerca in modo che i primi risultati
+ sono i risultati che l'utente si aspetta
+\end_layout
+
+\begin_layout Itemize
+Ingrandire il font, per permettere una lettura più agevole su tutto il sito
+\end_layout
+
+\begin_layout Itemize
+Mettere un calendario nella pagina delle mostre temporanee che aiuti l'utente
+ a capire quali mostre sono presenti in un determinato giorno
+\end_layout
+
+\begin_layout Itemize
+Mettere in rilievo informazion basilari come la pagina di come raggiungere
+ il louvre.
+ Questo intervento dovrebbe aiutare la prima navigazione dell'utente che
+ cerca di reperire informazioni basilari sul museo per una visita imminente.
+\end_layout
+
+\begin_layout Standard
+Con solo queste modifiche, secondo l'analisi Mile+ appena svolta, l'
+\emph on
+user experience
+\emph default
+ trarrebbe importanti miglioramenti che porteranno ad una navigazione più
+ agevole del sito e probabilmente anche più visitatori reali al museo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "biblio"
+options "bibtotoc,elsarticle-num"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

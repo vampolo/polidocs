@@ -1,0 +1,151 @@
+Con riferimento a un sistema logico qualsiasi, spiegare i concetti di decidibilità e semidecidibilità del reasoning. Fare un
+esempio di logica con reasoning decidibile e uno di logica con reasoning semidecidibile.
+Vedi le dispense, par. 2.2
+
+Dato un sistema logico un calcolo è una procedura automatica che dato un insieme di formule logiche \Gamma ed una formula \phi è in grado di dire se \Gamma |= \phi. Una logica si dice decidibile se dati \Gamma e \phi il calcolo è in grado di dire se \Gamma |= \phi o ~\Gamma |= \phi in un numero finito di passi. Si dice che la logica è semidecidibile invece se il calcolo può dire \Gamma |= \phi, ma non ~ \Gamma |= \phi in un numero finito di passi.
+Esempio di logica semidecidibile è FOL, mentre decidibile è per esempio SROIQ.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Spiegare il concetto di servizio di ragionamento. Classificare e descrivere brevemente i principali servizi di ragionamento. 
+Dire a quale servizio di ragionamento fondamentale sono riducibili tutti i principali servizi di ragionamento e spiegare come 
+tale riduzione viene eseguita per un servizio di ragionamento a scelta.
+Vedi le dispense, parte I, par. 7.2
+
+Un servizio di ragionamento su di una base di conoscenze è una procedimento che porta a verificare se un enunciato od asserzione X è conseguenza logica della base di conoscenze. I servizi di ragionamento possono essere suddivisi tra Globali e Locali.
+Globale: Hanno il compito di verificare proprietà globali della KB:
+	- Controllo di consistenza: Stabilisce se la KB è consistente o meno
+	- Classificazione delle classi atomiche: Restituisce la classificazione completa della gerarchia delle classi atomiche di KB
+	- Classificazione degli individui: Assegna ad ogni individuo le classi atomiche più specifiche a cui l'individuo appartiene
+Locale: Sono i servizi che verificano specifiche asserzioni ed enunciati:
+	- Verifica di relazione di sottoclasse
+	- Verifica di equivalenza tra classi atomiche
+	- Verifica di soddisfacibilità di una classe: Verifica che esista almeno un modello in cui non è vuoto l'insieme degli oggetti che soddisfano C
+	- Verifica della disgiunzione tra classi
+	- Instance check: Data una classe C ed un individuo a il servizio verifica se K |= C(a) 
+	- Retrieval: data una classe C il servizio trova tutti gli individui noti tali che K |= C(a)
+
+Tutti i servizi di ragionamento possono essere ridotti alla Verifica di soddisfacibilità di una classe.
+C sottoclasse di D se, e solo se, C intersecato ~D sottoinsieme di vuoto
+-----------------------------------------------------------------------------------------------------------------------------------------
+Spiegare il concetto di Knowledge Based System (KBS) e descrivere l’architettura generale di un KBS basato su DL.
+Vedi le dispense, parte I, par. 2.4.
+
+La caratteristica principale delle KBS, che le differenzia notevolmente dai sistemi basati su basi di dati, è il fatto che i modelli semantici sono parte integrante del prodotto finale e a runtime vengono usati per effettuare deduzioni.
+Una KBS basata su DL è costituita da:
+	- TBox: Specifica le relazioni tra classi
+	- RBox: Specifica relazioni tra proprietà
+	- ABox: Specifica le asserzioni riguardanti individui specifici
+
+	- API: Interfaccia alla KB
+
+	- Editor della KB: Permette di modificare la KB
+	- Reasoner: Permette di operare deduzioni sui concetti della KB attraverso le API
+
+	- Applicazioni software: Applicazioni generiche che si interfacciano alla KB attraverso le API
+-----------------------------------------------------------------------------------------------------------------------------------------
+Analizzare le principali differenze fra FOL e una DL come SROIQ(Dn), spiegando per quali ragioni questa è ritenuta più 
+adatta alle applicazioni del web semantico.
+Vedi le dispense, parte I, par. 2
+
+FOL è una logica semidecidibile, mentre SROIQ è completamente decidibile, SROIQ restringe l'espressività di FOL per ottenere questo risultato.
+L'essere decidibile permette di avere a) i risultati voluti sia in caso di conseguenza logica che nel caso opposto, b) essendo applicazioni web non ci si può permettere che una procedura non termini, c) è comunque abbastanza espressiva per esprimere la maggior parte delle basi di conoscenza necessarie nell'ambito del semnatic web
+-----------------------------------------------------------------------------------------------------------------------------------------
+Spiegare che cosa significa l’acronimo SROIQ(Dn).
+Vedi le dispense, parte I, par. 6, tab. 6.1
+
+A classe atomica
+C,D Classi arbitrarie
+R,S Proprietà
+a,b Individui
+
+AL -> sottoclasse, equivalenza, classe atomica, classe universale, classi complesse con: intersezione, \forallR.C, \existsR, C(a), R(a,b), a=b
+ALC -> AL + classe vuota, \existsR.C, ~C, unione
+H -> Inclusione ed equivalenza di proprietà
+
+SROIQ(Dn) è l'acronimo che specifica l'espressività della logica in particolare:
+	- S -> ALC + transitività di proprietà Tra(R)
+	- R -> H + riflessività, irriflessività, simmetria, asimmetria, catene, \existsR.self, asserzione negative
+	- O -> One of {}, restrizione di valore R \in^{-1} a
+	- I -> inversa R^{-}
+	- Q -> Restrizione di cardinalità qualificata >=n R.c
+	- Dn -> Attributi con valori in domini dati
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+#########################################################################################################################################
+
+Si descrivano vantaggi e svantaggi dei due approcci all’interfaccia verso documenti XML: SAX, DOM
+e JAXB.
+
+SAX: Ad eventi
+	Pro:
+		- Puoi esprimere solo quello che serve
+		- Leggero in memoria
+	Contro:
+		- Non si può modificare modello
+		- Interfaccia semplice => si richiede più codice: ad esempio per distinguere elementi dipendenti dal contesto
+DOM: A modelli:
+	Pro:
+		- Costruisce tutto il modello e lo salva in memoria
+		- Permette la modifica del modello creato
+	Contro:
+		- Occupazione di memoria eccessiva
+JAXB: Soluzione di Sun a SAX e DOM
+	Pro:
+		- Codice leggibile (?User dependent)
+		- Integrazione con il modello dell'applicazione -> Il parsing da una classe pronta da gestire
+	Contro:
+		- Specifico per un linguaggio
+		- Performance -> Aggiunge un ulteriore strato a DOM
+		
+-----------------------------------------------------------------------------------------------------------------------------------------
+Si spieghi (mostrando anche un esempio) perché gli schemi RDF-S / OWL sono detti
+“semantici” in contrapposizione con schemi “sintattici” quali DTD/XSD e si dica se esistono
+casi d'uso diversi degli uni rispetto agli altri.
+
+Gli schemi RDF-S/OWL sono detti sintattici perchè permettono di usare il modello specificato per effettuare ragionamenti deduttivi. Specificano i modelli ammessi.
+DTD,XSD specificano solamente la sintassi del modello andando così a definire quali sono i documenti validi.
+<rdfs:property rdf:about="#r">
+	<rdfs:domain>
+		<rdfs:class rdf:about="#B">
+			<rdfs:sublcassOf>
+				<rdfs:class rdf:about="#A"/>
+			</rdfs:subclassOf>
+		</rdfs:class>
+	</rdfs:domain>
+</rdfs:property>
+
+<A rdf:about="#i" r="pippo"/>  <B rdf:about="#i"><r>pippo</r></B>
+-----------------------------------------------------------------------------------------------------------------------------------------
+Si descrivano le principali differenze tra i linguaggi di schema DTD ed XSD per quanto riguarda la
+capacità espressiva.
+Si evidenzino inoltre:
+• relazioni con lo standard dei namespace
+• i vantaggi derivanti dal fatto che XSD sia a sua volta un linguaggio XML
+Dire se esiste e descrivere (anche in linguaggio naturale):
+• un linguaggio XML esprimibile in DTD ma non in XSD
+• un linguaggio XML esprimibile in XSD ma non in DTD
+
+XSD: 
+	- permette la tipizzazione degli elementi di testo
+	- content model misti
+	- XSD è in XML
+	- Permette contestualizzazione dei tag element
+	- Gestione nativa dei namespaces
+	- Documentazione (lato utente(dcoumentation) e lato parser(appinfo))
+DTD:
+	- Namespaces aggiunti dopo
+
+
+XSD può essere a sua volta validato.
+
+DTD->XSD -> sempre
+XSD->DTD -> <a>10</a> con restrizione su 10 che sia Integer
+-----------------------------------------------------------------------------------------------------------------------------------------
+(a) si spieghi in che senso XML è un “meta-linguaggio” e che ruolo hanno le regole di buona
+forma, i linguaggi di schema ed il validatore della rappresentazione dell'informazione.
+(b) si descrivano le principali differenze tra i linguaggi di schema DTD ed XSD
+
+XML è un meta-linguaggio in quanto permette di andare a modellare quello che è il vero linguaggio/modello.
+Le regole di buona forma sono quelle che identificano il fatto che un XML sia scritto in modo corretto ovvero che i tag siano innestati correttamente, che ci sia un'unica radice e che gli attributi siano scritti tra virgolette...
+I linguaggi di schema definiscono una struttura valida del file xml in relazione allo specifico linguaggio rappresentato. Specificano ad esempio quali tag possono apparire innestati ad altri se devno avere attributi obbligatori, ecc...
+Il validatore prende in ingresso il file xml e lo schema associato e permette di verificare se il file xml è valido ovvero se soddisfa i vincoli imposti dallo schema.
+Il validatore ovviamente controlla anche la buona forma.

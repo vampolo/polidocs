@@ -1,0 +1,776 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Crittografia e sicurezza delle comunicazioni
+\end_layout
+
+\begin_layout Standard
+Giacomo Verticale 
+\end_layout
+
+\begin_layout Standard
+Sito: Eserciziario (esercizi svolti a lezione negli anni passati) una minima
+ parte degli esercizi sono sul libro.
+ 
+\end_layout
+
+\begin_layout Standard
+Libro di testo: Trappe Washington, Crittografia con elementi di teoria dei
+ codici, Pearson Tutela delle informazioni quando transitano in un canale
+ di comunicazione tramite sistemi crittografici.
+ 
+\end_layout
+
+\begin_layout Standard
+Proteggere le infomrazioni perchè hanno valore economico.
+ Ci sono 2 tipologie di furti di dati: furto su commissione o di grandi
+ quantità di dati.
+ Un numero di carta di credito può valere anche 30$ (conta la freschezza
+ del dato).
+ Dobbiamo spendere meno del valore delle informazioni.
+ L'identità di una persona vale circa 60$ nel mercato nero dell'informazione.
+ La teoria dei codici viene fondata da cloude shannon.
+\end_layout
+
+\begin_layout Standard
+Esistono due figure professionali:
+\end_layout
+
+\begin_layout Itemize
+Crittografo (come codificare l'informazione) 
+\end_layout
+
+\begin_layout Itemize
+Crittoanalista (come decodificare le informazioni)
+\end_layout
+
+\begin_layout Standard
+In questo corso si studia crittografia ed analisi ma alcune tecniche sono
+ comuni ad entrambi.
+ 
+\end_layout
+
+\begin_layout Standard
+L'intruso attivo vuole manomettere la comunicazione
+\end_layout
+
+\begin_layout Standard
+Tre fattori fondamentali: - di entità Segretezza della comunicazione, integrità
+ delle comunicazioni, e autenticazione - - di origine dei dati Sicurezza
+ computazionale: algoritmo in cui siamo in grado di provare che per essere
+ violato bisognsa eseguire N operazioni Tipi di attacchi: ciphertext only
+ Ci vuole Pi known plaintext Ci-1, Pi-1, Ci vuole Pi chosen plaintext Ci-1,
+ Pi-1, Ci vuole Pi con Ci-1 e P1-1 scelti dall'attaccante chosen ciphertext
+\end_layout
+
+\begin_layout Standard
+Si può dimostrare formalmente l'affinità di un algoritmo di crittografia
+ con uno matematico tramite formalismo.
+ Sicurezza probabile > sicurezza computazionale Sicurezza incondizionata:
+ impossibile violare l'agoritmo anche con potenza computazionale illimitata.
+\end_layout
+
+\begin_layout Subsection
+Cifrario a scorrimento
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{i}=p_{i}+k\: mod(n)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cosa molto poco pur non essendo particolarmente sicura.
+ Viene utilizzata ampiamente.
+ Per esempio il caso della protezione dello streaming, in questi casi se
+ l'attaccante reperisce dati che non hanno più valenza economica.
+\end_layout
+
+\begin_layout Subsubsection
+Attacco Plaintext
+\end_layout
+
+\begin_layout Standard
+Per rompere questo algoritmo l'attaccante deve compiere una sola operazione
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Attacco chosen plaintext
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{i}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Basta fare una singola operazione per determinare la chiave.
+ Molto semplice.
+\end_layout
+
+\begin_layout Subsection
+Cifrario affine
+\end_layout
+
+\begin_layout Standard
+Tipo di cifrario in cui si moltiplica per un certo coefficiente la singola
+ lettera di un messaggio in chiaro, la chiave è una coppia di numeri (a
+ e b) e quindi è più lunga rispetto al caso precedente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{i}=ap_{i}+b\: mod(n)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per rompere questo algoritmo basta eseguire la seguente operazione:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+aa^{-1}=mod(n)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+oppure
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+aa^{-1}\: mod(n)=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La condizione per la quale si riesce a trovare 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+è: 
+\begin_inset Formula $mcd(a,n)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Cifrario a sostituzione
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{i}=S_{k}(p_{i})\]
+
+\end_inset
+
+ Con S(k) biunivoca, ovvero una permutazione.
+ Le permutazoni di n elementi sono n!
+\end_layout
+
+\begin_layout Subsubsection
+Attacchi non plaintext
+\end_layout
+
+\begin_layout Standard
+Se la chiave non cambia in un singolo messaggio, l'attaccante che ha le
+ coppie ci e pi.
+ Se viene usata la ci allora la pi era la stessa dato che 
+\begin_inset Formula $S(k)$
+\end_inset
+
+ è biunivoca.
+ Dat y coppie la ricerca sarà n-y coppie.
+ Se il testo è sufficientemente lungo la probabilità che compaiono tutte
+ le coppie diventa trascurabile.
+ Quindi più lungo è il testo più è facile scoprire la chiave.
+\end_layout
+
+\begin_layout Subsubsection
+Attacco chosen plaintex
+\end_layout
+
+\begin_layout Standard
+Attacco banale, si usa l'intero dizionario per scoprire i valori biunivoci
+ di 
+\begin_inset Formula $S(k)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Attacco cyphertext
+\end_layout
+
+\begin_layout Standard
+ricordursi al caso non plaintext.
+\end_layout
+
+\begin_layout Subsubsection
+Problemi
+\end_layout
+
+\begin_layout Standard
+Il problema del cifrario a sostituzione è che preserva la frequenza delle
+ coppie di lettere.
+ Inoltre non rispetta i due principi di shannon.
+\end_layout
+
+\begin_layout Itemize
+Se cambio un solo valore nella funzione 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ho un cifrato simile e non molto diverso, posso riutilizzare i dati usati
+ durante un altro attacco per trovare la nuova 
+\begin_inset Formula $S_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Modello e principi e di Shannon
+\end_layout
+
+\begin_layout Subsection
+Modello
+\end_layout
+
+\begin_layout Standard
+Modello di shannon: Interlocutore che deve inviare delle informazioni(P)
+ Testo in chiaro -> algoritmo di cifratura -> testo cifrato -> canale ->
+ algoritmo di decifratura -> testo in chiaro | | | | chiave di cifratura
+ chiave di decifrazione
+\end_layout
+
+\begin_layout Subsection
+Principi
+\end_layout
+
+\begin_layout Subsubsection
+Confusione
+\end_layout
+
+\begin_layout Standard
+Chiavi leggermente diverse devono causare esisti cifrati molto diversi.
+\end_layout
+
+\begin_layout Subsubsection
+Diffusiones
+\end_layout
+
+\begin_layout Standard
+Una piccola differenza nel testo in chiaro deve causare una grande differenza
+ nel testo cifrato.
+\end_layout
+
+\begin_layout Subsubsection
+Come progettare algoritmi che rispettano questi principi
+\end_layout
+
+\begin_layout Standard
+Per progettare un cifrario che rispetta queste regole bisgona lavorare a
+ blocchi di lettere e non più a singoli caratteri come nel cifrario di cesare.
+ Se lavoro su un blocco di lettere accade che se la stessa lettera accade
+ più volte nello stesso blocco sarà cifrata in un modo diverso e che una
+ piccola modifica della chiave avrà impatto sull'intero blocco.
+ Viene quindi più semplice seguire i principi di Shannon.
+\end_layout
+
+\begin_layout Section
+Cifrari a blocchi
+\end_layout
+
+\begin_layout Subsection
+Cifrario di Hill
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{j}=P_{j}M\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dove 
+\begin_inset Formula $C$
+\end_inset
+
+ e 
+\begin_inset Formula $P$
+\end_inset
+
+ ed M sono matrici ed 
+\begin_inset Formula $M$
+\end_inset
+
+ è la chiave.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P^{-1}C=P^{-1}PM\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Attacchi
+\end_layout
+
+\begin_layout Subsubsection
+Chosen plaintext
+\end_layout
+
+\begin_layout Subsection
+Cifrario di Verman (one time)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{i}=p_{i}+k_{i}\: mod(n)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bisogna scambiare un primo messaggio grande quanto la lunghezza della chiave.
+\end_layout
+
+\begin_layout Subsubsection
+Attacchi
+\end_layout
+
+\begin_layout Subparagraph
+Cyphertext only
+\end_layout
+
+\begin_layout Standard
+Incondizionatamente sicuro.
+\end_layout
+
+\begin_layout Subparagraph
+Known plaintext
+\end_layout
+
+\begin_layout Standard
+Incondizionatamente sicuro.
+\end_layout
+
+\begin_layout Subparagraph
+Chosen plaintext
+\end_layout
+
+\begin_layout Standard
+Incondizionatamente sicuro.
+\end_layout
+
+\begin_layout Subparagraph
+fff
+\end_layout
+
+\begin_layout Standard
+Incondizionatamente sicuro.
+\end_layout
+
+\begin_layout Subsection
+LFSR
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{i}=p_{i}+z_{i}\: mod(2)=p_{i}\: xor\: z_{i}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Attacchi 
+\end_layout
+
+\begin_layout Standard
+gli attacchi sono identici al cifrario di Hill.
+\end_layout
+
+\begin_layout Subsection
+Cifrario autochiave
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{i}=(p_{i}+p_{i-1})\: mod(2)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bisogna definire il valore iniziare di 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+che quindi diventa esattamente la chiave.
+ L'idea di fondo è che la chiave cambia continuamente
+\end_layout
+
+\begin_layout Section
+Cifrari complessi
+\end_layout
+
+\begin_layout Standard
+E' possibile creare cifrari complessi usando cifrari più semplici? Si.
+ Tramite i 
+\emph on
+cifrari prodotti
+\emph default
+.
+ Ovvero ripetendo molteplici volte un cifrario di base o un mix di cifrari
+ di base.
+ La sicurezza del nuovo cifrario cambia dai cifrari base utilizzati.
+ Se si utilizzano cifrari idenpotenti la potenza del nuovo cifrario non
+ cambia.
+\end_layout
+
+\begin_layout Standard
+Utilizzando per esempio il cifrario di Hill 
+\begin_inset Formula $c=P\bullet M$
+\end_inset
+
+ come cifrario base e provando ad applicarlo due volte si ha 
+\begin_inset Formula $c=(P\bullet M_{1})M_{2}=P\bullet(M_{1}M_{2})=P\bullet M^{1}$
+\end_inset
+
+E' quindi uguale a cifrare con la sola 
+\begin_inset Formula $M^{1}$
+\end_inset
+
+.
+ La cosa tuttavia cambia se vengono cambiati i moduli nei cifrari che si
+ basano sull'operazione modulo perchè in quel caso cambia l'algoritmo stesso.
+\end_layout
+
+\begin_layout Standard
+Per quanto riguarda i cifrari utilizzati ci sono stati vari cifrari complessi
+ che hanno avuto piede.
+ Il principale è l'
+\series bold
+SPN
+\series default
+ (Substitution Permutation Network) ed è composto da operazioni di sostituzioni
+ e permutazioni ripetute fino a che non si raggiunge la sicurezza voluta.
+ Dato 
+\begin_inset Formula $l\bullet m$
+\end_inset
+
+la lunghezza del blocco, ovvero il numero di bit che compongono il blocco
+ stesso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{cases}
+P: & \{1,\ldots,l\bullet m\}\longrightarrow\{1,\ldots,l\bullet m\}\\
+S: & \{0,1\}\longrightarrow\{0,1\}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P effettua le permutazioni e S effettua le sostituzioni (PUT THE DOT FILE
+ HERE)
+\end_layout
+
+\begin_layout Subsection
+Cifrario AES
+\end_layout
+
+\begin_layout Standard
+Cifrario che offre un buon compromesso tra complessità e sicurezza.
+ Ha un livello confrontabile con la ricerca esaustiva.
+ Dal punto di vista della velocità è il più veloce tra quegli algoritmi
+ confrontabili con la ricerca esaustiva.
+ E' un cifrario 
+\emph on
+general purpose
+\emph default
+ ed è il successore del 
+\series bold
+DES
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Gli USA hanno un organismo governativodi nome MIST che ha il compito di
+ definire gli standard da utilizzare nel commercio compresi gli standard
+ di sicurezza.
+ Questo organismo definì il DES come cifratura a blocchi di 64 bit ed una
+ chiave di 56 bit.
+ Un cifraio di questo tipo negli anni 70 era difficile trovare la chiave
+ con una ricerca a froza bruta.
+ Oramai però un normale computer può trovare la chiave in poche ore.
+ E' stato quindi necessario trovare un nuovo standard e l'AES è stato quello
+ che è stato scelto come algorimo migliore.
+ L'AES ha le seguenti caratteristiche:
+\end_layout
+
+\begin_layout Itemize
+Blocco a 128 bit
+\end_layout
+
+\begin_layout Itemize
+Chiave di 128/192/256 bit (più rounds)
+\end_layout
+
+\begin_layout Standard
+L'AES è fatto di diversi layer
+\end_layout
+
+\begin_layout Itemize
+Sub bytes (SB).
+\end_layout
+
+\begin_layout Itemize
+Shift Rows (SR) scambia le righe tra di loro.
+\end_layout
+
+\begin_layout Subsubsection
+Mix Columns (MC) scambia le colonne tra di loro e anche blocchi.
+\end_layout
+
+\begin_layout Standard
+L'operazione è svolta nel seguente modo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\begin{array}{cccc}
+x & x+1 & 1 & 1\\
+1 & x & x+1 & 1\\
+1 & 1 & x & x+1\\
+x+1 & 1 & 1 & x\end{array}\right)\left(c_{ij}\left(x\right)\right)mod\left(g\left(x\right)\right)=\left(d_{ij}\left(x\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sono stati scelti 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $x+1$
+\end_inset
+
+per rendere sempici i calcoli.
+\end_layout
+
+\begin_layout Subsubsection
+Ark
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(d_{ij}\right)\oplus\left(k_{ij}\right)=\left(e_{ij}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modalità di funzionamento dei cifrari a blocchi
+\end_layout
+
+\begin_layout Subsubsection
+ECB
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P=P_{1}\left\Vert P_{2}\right\Vert \dots\left\Vert P_{i}\right\Vert \ len\left(P_{i}\right)=l*m\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{i}=E_{k}\left(P_{i}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{i}=C_{i}\Vert C_{2}\dots\Vert C_{2}\Vert\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Svantaggio di questo funzionamento non deve essere usata per il seguente
+ problema: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{i}=P_{j}\Rightarrow C_{i}=C_{j}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ovvero gli stessi blocchi vengono sempre criptati nello stesso modo e quindi
+ si può subito sapere se due messaggi sono uguali o meno.
+ Inoltre con la criptoanalisi si possono evidenziare i blocchi più utilizzati
+ e darne un significato.
+\end_layout
+
+\begin_layout Subsubsection
+CBC
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P=P_{1}\left\Vert P_{2}\right\Vert \dots\left\Vert P_{i}\right\Vert \ len\left(P_{i}\right)=l*m\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{i}=E_{k}\left(P_{i}\oplus C_{i-1}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{o}=IV\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con 
+\begin_inset Formula $C_{0}=IV$
+\end_inset
+
+ fissato inizialmente ogni messaggio anche uguale è codificato in maniera
+ diversa ed il valore IV può essere un numero a caso e non necessariamente
+ segreto.
+\end_layout
+
+\begin_layout Standard
+la decodifica è fatta in maniera seguente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{i}=D_{k}\left(C_{i}\right)\oplus C_{i-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{0}=IV\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

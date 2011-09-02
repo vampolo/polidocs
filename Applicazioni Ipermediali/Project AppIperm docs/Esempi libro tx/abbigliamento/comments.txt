@@ -1,0 +1,42 @@
+Commento generale:
+Ottimo lavoro. Sia per quanto riguarda la documentazione che l’idea in sé. Da segnalare solo alcune piccole imprecisioni e un design a volte “troppo di base”, ma nel complesso rimane ottimo.
+
+
+Conceptual Design
+Commento generale:
+Design semplicistico e “standard” ma significativo. Ottimo lo sforzo di dare nomi significativi a relazioni e topic. Documentazione molto ben dettagliata!
+
+Descrizione macro-errori (con riferimento a numeri di pagina di documento)
+Non rilevati.
+
+
+
+
+Logical Design
+Commento generale:
+Completo e curato, frammentazione significativa e pattern di navigazione descritti ottimamente.
+
+Descrizione macro-errori (con riferimento a numeri di pagina di documento)
+Non sono indicati i Multiple Dialogue Act
+
+
+
+
+Page Design
+Commento generale:
+Esaustivo e ben curato
+
+Descrizione macro-errori (con riferimento a numeri di pagina di documento)
+Non rilevati
+
+
+
+
+Contenuti
+Complessivamente molto buoni, solamente a volte eccedono in lunghezza.
+
+
+
+
+Altri aspetti (qualità documentazione, delta di apprendimento, presenza al tutoring)
+La documentazione è ottima, sia come struttura di documento che come impaginazione. La presenza al tutoring è stata costante e la preparazione del gruppo, già buona, è migliorata ulteriorm

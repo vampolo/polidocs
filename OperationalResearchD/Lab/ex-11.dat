@@ -1,0 +1,18 @@
+# Exercise 11:  Telecommunication Network
+# Refer to the lab slides
+
+set Nodes := a b c d e f;
+ 
+param s := a; 
+
+param t := d; 
+
+param: Arcs: c1 c2 := 
+	a b 19 11 , 
+	a f 9  1, 
+	b c 19 11, 
+	b e 10 14, 
+	c d 11 23,  
+	e d 2  2, 
+	e f 17 2,  
+	f c 15 3 ;

@@ -1,0 +1,36 @@
+Commento generale:
+Progetto ben strutturato ed organizzato. Buone scelte di design.
+
+Conceptual Design
+
+Descrizione macro-errori (con riferimento a numeri di pagina di documento)
+
+Descrizione motivations/role piuttosto “sintattica” e poco motivante. Viene ripetuto che cosa è l’elemento di design piuttosto che spiegarne lo scopo.
+
+
+Logical Design
+
+Descrizione macro-errori (con riferimento a numeri di pagina di documento)
+
+Bene.
+
+
+Page Design
+
+Descrizione macro-errori (con riferimento a numeri di pagina di documento)
+Suggerimento: pag. 42.
+Se “incontri giocati da giocatore X” non è attivo, in questo caso è meglio mettere “il giocatore X non ha ancora giocato alcun incontro”; altrimenti, sembra che il link non funzioni.
+
+Pag. 53: a volte mancano info di orientamento esplicite sulla pagina per farmi capire che cosa sto guardando (specialmente nei dilaogue act di un multiple topic).
+L’indicazione del percorso non sostituisce le info di orientamento.
+
+Forse i landmark sono troppi. Sarebbe stato meglio suddividerli in modo piu’ opportuni in aree.
+
+
+Contenuti
+
+
+Pag. 41. Confusione tra “contatti” e “credits”. I contatti sono i contatti della FIGC (stakeholders), i credits sono i contatti dei progettisti/webamaster.
+
+
+

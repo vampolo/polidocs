@@ -1,0 +1,18 @@
+# LAB SESSION 1. - EXAMPLE A.
+
+set I = a b c;
+set J = 1 2;
+
+param A :
+	     a     b     c   :=
+	1    -1    2     3.1
+	2    3.3   -7    -1  ;
+
+param b := 
+	1   -3
+	2   9.2;
+
+param c :=
+	a    2
+	b    4
+	c    3;
