@@ -1,0 +1,2809 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass report
+\options a4paper,12pt,oneside
+\use_default_options true
+\language italian
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref true
+\pdf_title "eBusiness 2010: Renner"
+\pdf_author "Vincenzo Ampolo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size largest
+Politecnico di Milano
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Corso di laurea specialistica in Ingegneria Gestionale
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Dipartimento di Ingegneria Gestionale
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Corso di laurea specialistica in Ingegneria Informatica
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Dipartimento di Elettronica ed Informazione
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename img/logo-polimi.png
+	lyxscale 13
+	scale 13
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align center
+
+\series bold
+\size larger
+eBusiness: Fatturazione elettronica 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing other 3
+Relatore: Prof.
+ Gabriele Tedesco
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align right
+Documento di:
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align right
+Vincenzo Ampolo (750336)
+\end_layout
+
+\begin_layout Standard
+\align right
+Syed Hassan Gilani (751947)
+\end_layout
+
+\begin_layout Standard
+\align right
+Giuseppe Gizzi (766891)
+\end_layout
+
+\begin_layout Standard
+\align right
+Gianluca Locati (767001)
+\end_layout
+
+\begin_layout Standard
+\align right
+Matteo Moscheni (766683)
+\end_layout
+
+\begin_layout Standard
+\align right
+Andrea Parola (750882)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing other 3
+\align center
+Anno Accademico 2010/2011
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{Roman} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Introduzione
+\end_layout
+
+\begin_layout Standard
+Renner Italia SPA, appartenente al network “Renner Global Alliance”, è una
+ giovane azienda produttrice di vernici per legno in continua e rapida espansion
+e; in pochissimi anni, infatti, il fatturato è cresciuto da circa 2,5 milioni
+ di euro (2004), anno di inaugurazione del primo stabilimento, a oltre 53
+ milioni di euro (2010).
+ 
+\end_layout
+
+\begin_layout Standard
+Renner occupa, attualmente, il quinto posto tra gli operatori del mercato
+ Italiano in termini di quantità di vernici vendute, 16.000 tonnellate circa
+ e dispone di 173 dipendenti.
+ L’impresa, oltre ad operare in territorio nazionale, esporta prodotti anche
+ in paesi esteri e il fatturato si divide equamente tra questi due canali.
+ 
+\end_layout
+
+\begin_layout Standard
+La distribuzione, invece, viene eseguita tramite depositi, agenti e un canale
+ diretto con i clienti grazie alla grande distribuzione organizzata.
+ La produzione consiste principalmente in due tipologie di prodotti: vernici
+ a base acqua e vernici a base solvente, sia per uso professionale che per
+ utilizzo “fai da te”.
+ Quasi la totalità del fatturato è generata, però, da vernici per uso profession
+ale (circa il 95%) e l’azienda si sta muovendo per incentivare maggiormente
+ il consumo “fai da te”.
+ La gamma di articoli offerti è estremamente ampia in quanto è possibile,
+ tramite un tintometro, miscelare diversi componenti per ottenere il prodotto
+ desiderato.
+ Questo crea, ovviamente, dei problemi a livello normativo in quanto i prodotti
+ risultanti dall’utilizzo del tintometro devono sottostare alle stesse regolamen
+tazioni di qualità e sicurezza dei prodotti originali; anche per questo
+ motivo Renner ha in previsione di avviare un progetto di razionalizzazione
+ della gamma di articoli offerti.
+ 
+\end_layout
+
+\begin_layout Standard
+L’azienda ha di recente deciso di gestire il ciclo attivo di fatturazione
+ e la conservazione delle fatture in formato elettronico, esternalizzando
+ l’intero processo al proprio partner bancario.
+ Il progetto è stato promosso con grande commitment da parte di tutta l’azienda,
+ con l’obiettivo di snellire il processo, ridurre i costi e liberare risorse
+ impegnate in attività a scarso valore aggiunto.
+ La nostra analisi si focalizzerà sul processo di fatturazione, evidenziando
+ differenze, vantaggi e criticità emerse prima e dopo l’implementazione
+ del cambiamento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Caso Renner
+\end_layout
+
+\begin_layout Section
+Spinte al cambiamento
+\end_layout
+
+\begin_layout Standard
+Prima di procedere con l’analisi del processo, è opportuno approfondire
+ quali sono state le motivazioni che hanno spinto Renner ad attuare il progetto
+ di dematerializzazione delle fatture.
+\end_layout
+
+\begin_layout Standard
+In prima istanza il cambiamento dell’approccio che gli istituti bancari
+ hanno adottato con i propri clienti negli ultimi anni: non più semplici
+ istituti di credito, ma anche fornitori di soluzioni a pagamento per le
+ imprese.
+ I motivi che hanno spinto Renner a portare avanti il progetto sono stati
+ principalmente cinque.
+ Innanzitutto la riduzione dei costi che, stimati su 15.620 fatture del periodo
+ Gennaio-Novembre 2010, ammontava a 26.000€, resa possibile anche dalla progressi
+va dismissione dello spazio dedicato dall’archiviazione delle fatture.
+ Grazie alla fatturazione elettronica, infatti, le fatture vengono conservate
+ esclusivamente in formato digitale.
+ 
+\end_layout
+
+\begin_layout Standard
+Un altro driver che ha pesato sulla scelta di rinnovamento di questo processo
+ è stata la possibilità di cedere la responsabilità della conservazione
+ delle fatture a Unicredit che, in quanto fornitore del servizio, avrà l’onere
+ di accertarsi che le fatture vengano preservate secondo le norme vigenti.
+ 
+\end_layout
+
+\begin_layout Standard
+Il terzo fattore riguardava le modalità di accesso al credito tramite sconto
+ sulle fatture.
+ Si trattava di un processo estremamente burocratico e lento, a causa di
+ diverse procedure consolidate da tempo negli istituti bancari.
+ Affidando alla propria banca il processo di fatturazione, invece, l’azienda
+ risulta più trasparente nei confronti del sistema economico, agevolando
+ anche i processi di rating e permettendo, quindi, una maggiore facilità
+ di accesso al credito.
+ Essendo la banca stessa a gestire le fatture dell’azienda, è anche auspicabile
+ che le procedure di sconto vengano snellite e standardizzate.
+ La rapida crescita dell’impresa e il conseguente aumento di fatture da
+ processare è stato un altro motivo che ha spinto Renner ad optare per questa
+ innovazione, soprattutto considerando l’intenzione dell’azienda di incrementare
+ le vendite nel mercato “fai da te”, che porterà a sempre maggiori benefici
+ differenziali grazie alla dematerializzazione delle fatture.
+ 
+\end_layout
+
+\begin_layout Standard
+L’ultimo fattore che ha spinto l’azienda ad attuare questo cambiamento è
+ stato procurato dai fornitori delle materie prime (soprattutto quelli provenien
+ti dal Nord Europa) i quali, utlizzando già un sistema di fatturazione elettroni
+ca, premevano per l’adozione del medesimo metodo di processamento delle
+ fatture anche da parte di Renner.
+ E’ opportuno sottolineare, inoltre, che i competitors diretti non si sono
+ ancora mossi per una gestione delle fatture in formato elettronico, ponendo
+ Renner come azienda innovatrice in questo settore.
+ 
+\end_layout
+
+\begin_layout Standard
+In generale, l’approccio alla fatturazione elettronica di Renner può essere
+ definito strategico perchè rivoluziona interamente il processo aziendale
+ della fatturazione e si fa promotore di cambiamenti anche per altri processi
+ come la gestione del magazzino e la razionalizzazione dei prodotti a catalogo.
+\end_layout
+
+\begin_layout Section
+Barriere al cambiamento
+\end_layout
+
+\begin_layout Standard
+Il quadro normativo italiano riguardante la fatturazione risulta essere
+ molto più vincolante rispetto ai paesi esteri, e ciò è da attribuire al
+ tentativo di ridurre al minimo i rischi di truffe o di comportamenti illeciti.
+ 
+\end_layout
+
+\begin_layout Standard
+Per molte aziende questo costituisce un fattore frenante all’ implementazione
+ di un sistema di fatturazione elettronica.
+ Renner, tuttavia, vede questa differenza come un’opportunità per effettuare
+ agevolmente un cambiamento anche nel processo di fatturazione passiva come
+ richiesto dai suoi fornitori tedeschi.
+ Altro fattore limitante è il fatto che i benefici ottenibili non siano
+ facilmente identificabili; i 26.000€ risparmiati da Renner sono una cifra
+ poco significativa rispetto al fatturato, ma esistono un insieme di benefici
+ intangibili (che andremo successivamente ad esporre) che rendono l’adozione
+ della fatturazione elettronica molto valida.
+ 
+\end_layout
+
+\begin_layout Standard
+Avere un ciclo dell’ordine molto frammentato può rendere difficile il processo
+ di standardizzazione della fatturazione.
+ Poiché il fatturato di Renner viene generato principalmente da due mercati
+ (vendite verso depositi e vendite verso produttori di mobili e altro),
+ l’impresa è riuscita a non frammentare il ciclo dell’ordine, rendendo possibile
+ standardizzare il processo di fatturazione attraverso l’uso di xml per
+ creare le fatture.
+ Essendo il processo di fatturazione in outsourcing, Renner si rende completamen
+te trasparente verso Unicredit, che possiede tutti i dati relativi al fatturato
+ dell’azienda.
+ 
+\end_layout
+
+\begin_layout Standard
+Alcune imprese non gradiscono condividere queste informazioni con altri
+ istituti, mentre Renner non considera questo elemento un ostacolo al cambiament
+o.
+ Molte volte, invece, sono i responsabili IT stessi a frenare i cambiamenti,,
+ non possedendo le caratterestiche necessarie per dare una spinta innovativa
+ all’azienda.
+ Il responsabile IT di Renner, al contrario, persona giovane e maggiormente
+ predisposta al cambiamento,è stato uno dei promotori dell’adozione della
+ fatturazione elettronica.
+ L’ultima criticità solitamente presente nell’adozione di questo nuovo processo,
+ che rappresenta un problema anche per Renner, consiste nel riuscire a convincer
+e i clienti ad adottare il nuovo sistema proposto.
+ 
+\end_layout
+
+\begin_layout Standard
+L’azienda non dovrebbe riscontrare problemi nel convincere i circa trenta
+ depositi con cui lavora, e su cui sta già facendo pressione, mentre risulterà
+ più difficile convincere i restanti compratori.
+ Questi ultimi, infatti, sono già stati contattati, ma ad oggi nessuno ha
+ ancora risposto positivamente alla richiesta di Renner.
+\end_layout
+
+\begin_layout Section
+Analisi interna
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/catena-del-valore.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Catena del valore
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Infrastruttura dell’impresa
+\series default
+: Non abbiamo riscontri diretti sull’esistenza di un reparto adibito alla
+ gestione dell’infrastruttra di Renner, ma possiamo ragionevolmente supporne
+ l’esistenza all’interno del gruppo “Renner Global Alliance”.
+ L’azienda è formata principalmente da centri di produzione e di distribuzione.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Gestione delle risorse umane
+\series default
+: Avendo 173 dipendenti, è ragionevole suppore che ci sia una funzione aziendale
+ adibita alla gestione del personale aziendale.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sviluppo della tecnologia
+\series default
+: Renner dispone di una funzione adibita all’ICT, globalmente responsabile
+ dell’avanzamento tecnologico dell’impresa nel tempo.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Approvigionamenti
+\series default
+: Gestisce tutti gli acquisti effettuati da Renner.
+ Il ragionier Nanni, oltre ad essere il responsabile di suddetto reparto,
+ è stato il promotore dell’introduzione della fatturazione elettronica.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Logistica interna
+\series default
+: Si occupa della gestione dei flussi fisici e informatici in entrata.
+ Operations: Riguarda l’attività di produzione della vernice venduta da
+ Renner.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Logistica esterna
+\series default
+: Gestisce i flussi fisici e informatici in uscita dell’impresa.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Marketing e Vendite
+\series default
+: Le vendite vengono effettuate tramite depositi, agenti, e la grande distribuzi
+one organizzata.
+ Non abbiamo informazioni per quanto riguarda il Marketing aziendale, ma
+ sarebbe irrazionale non ipotizzare un reparto adibito a tale compito.
+ Il comparto di marketing si avvale già di servizi informatici innovativi
+ come il tool per creare nuove tipologie di prodotto a misura del cliente
+ usando come base prodotti già esistenti.
+ E’ possibile acquistare prodotti di Renner tramite tre diverse modalità:
+ distributori, agenti o direttamente in azienda.
+ Il canale dei distributori è il più utilizzato, segue quello tramite agenti
+ sul territorio ed infine tramite contatto diretto in azienda.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Servizi
+\series default
+: Possiamo supporre l’esistenza di un servizio di supporto ai clienti, in
+ termini di assistenza post vendita o di garanzia nei confronti dei prodotti
+ offerti.
+\end_layout
+
+\begin_layout Section
+Analisi esterna
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/modello-di-porter.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Modello di Porter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fornitori
+\series default
+: Le imprese italiane sono in posizione di debolezza nei confronti dei fornitori
+ di materie prime.
+ Una delle materie prime principali di Renner è il petrolio che subisce
+ frequenti variazioni del prezzo di mercato a livello internazionale.
+ Il prezzo del petrolio, invece, è aumentato negli ultimi decenni e sicuramente
+ sarà più scarso e quindi più costoso in futuro.
+ L’azienda, essendo di tipo chimica, consuma anche ingenti quantità di acqua
+ e di solventi.
+ Ultimamente si stanno diffondendo nuovi prodotti basati su oli vegetali,
+ è quindi previsto un incremento della domanda di quest’ultimi.
+ Anche se ultimamente ci sono state innovazioni nell’ambito dell’utilizzo
+ degli oli vegetali, le vernici derivate da idrocarburi costituiscono la
+ maggior parte della produzione e ciò pone Renner in una situazione di svantaggi
+o nei confronti dei fornitori, soprattutto i fornitori di idrocarburi.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Acquirenti
+\series default
+: Il segmento comprende tutte le industrie e gli artigiani che producono
+ manufatti in legno verniciato, in linea o non, nonché le verniciature industria
+li conto terzi e i privati.
+ La domanda è molto frammentata, e il potere contrattuale è nettamente a
+ favore degli acquirenti.
+ Nell’ultimo periodo si riscontra un aumento degli acquirenti privati che
+ quindi costituiscono un notevole fattore di crescita nel settore.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Prodotti Sostitutivi
+\series default
+: Non esistono prodotti diffusi in grado di sostituire le vernici.
+ La vernice è inoltre un bene non soggetto a particolari innovazioni tali
+ da rivoluzionare il settore e non è prevista una loro sostituzione nel
+ medio e lungo periodo.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Potenziali Entranti
+\series default
+: Il settore è protetto da barriere tecnologiche abbastanza elevate, mentre
+ non presenta barriere finanziarie particolarmente difficili da superare.
+ Data la domanda frammentata è indispensabile che ogni nuovo concorrente
+ crei una rete di distribuzione capace di raggiungere sia i professionisti
+ che gli hobbisti.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Concorrenti del Settore
+\series default
+: Anche se si sono contate numerose acquisizioni, la cultura dei produttori
+ è rimasta tipicamente “italiana”, caratterizzata da un’elevata presenza
+ di piccole-medie imprese.
+ Nessuno dei concorrenti sembra aver iniziato un processo di razionalizzazione
+ e di informatizzazione pari a quello di Renner.
+ Sotto questo punto di vista Renner è promotore anche a livello internazionale.
+\end_layout
+
+\begin_layout Standard
+L'analisi svolta è stata basata su un documento di federchimica.it sul mercato
+ dei produttori di vernici
+\begin_inset CommandInset citation
+LatexCommand cite
+key "federchimica"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Mappatura dei processi prima del cambiamento
+\end_layout
+
+\begin_layout Subsection
+Diagramma ad albero delle fasi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/diagramma-as-is.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagramma ad albero delle fasi nell'
+\emph on
+as-is
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Flusso delle attività 
+\emph on
+as-is
+\end_layout
+
+\begin_layout Standard
+Renner, come tutte le aziende italiane, è sottoposta alle normative vigenti
+ sull’ emissione e conservazione delle fatture cartacee.
+ 
+\end_layout
+
+\begin_layout Standard
+Per meglio capire il processo di fatturazione, però, bisogna analizzare
+ l’intero ciclo “ordine-consegna-fatturazione-pagamento”.
+ Renner vende principalmente tramite agenti che ricercano nuovi clienti
+ e distributori.
+ Per ogni nuovo cliente viene decisa una gamma di prodotti, includendo quelli
+ che più interessano al cliente e scartando quelli di minore appeal.
+\end_layout
+
+\begin_layout Standard
+Nella gamma offerta vengono inseriti anche dei “prodotti civetta” con lo
+ scopo di attirare l’attenzione del cliente e spingerlo ad emettere il primo
+ ordine di prova.
+ I prodotti così selezionati costituiscono il listino del cliente.
+ 
+\end_layout
+
+\begin_layout Standard
+Il primo ordine di prova, che può avere un importo molto variabile (per
+ esempio un ordine di prova dell’ikea è nell’ordine di 1000kg di vernice,
+ mentre quello di un artigiano è nell’ordine dei 50kg), viene recepito mediante
+ diversi canali: per via telematica (anche grazie all’integrazione degli
+ ERP del cliente e di Renner), tramite fax, e-mail, o tramite un agente
+ Renner.
+ In ogni caso l’ordine viene inserito nel sistema ERP aziendale, per poi
+ essere valutato dal responsabile di produzione.
+ Per i prodotti a maggior rotazione l’azienda conserva fino a 15/30 giorni
+ di scorte (riordinate a punto fisso) per permettere agli ordini di essere
+ evasi in breve tempo, mentre per gli altri prodotti non vengono tenute
+ scorte, e la produzione viene attivata su ordinazione.
+ 
+\end_layout
+
+\begin_layout Standard
+All’uscita dei prodotti dal magazzino si procede alla compilazione delle
+ fatture tramite un lavoro di back office.
+ Le informazioni standard della fattura (cliente, prodotti..) vengono caricate
+ dall’ERP aziendale, mentre il prezzo dei prodotti potrà subire variazioni
+ in base agli accordi presi con i diversi clienti.
+ Si controlla, infine, che la bolla della merce in uscita sia conforme con
+ l’ordine che si sta fatturando.
+ Due persone sono impiegate a tempo pieno per questa attività.
+ In certi periodi dell’anno è necessario un terzo o addirittura un quarto
+ addetto per il controllo di tutte le fatture in uscita.
+ 
+\end_layout
+
+\begin_layout Standard
+A compilazione avvenuta la fattura viene stampata (ogni fattura è composta
+ mediamente da 10 pagine), piegata, imbustata, affrancata e spedita.
+ Una persona ( ½ per il mercato italia e ½ per il mercato internazionale)
+ all’interno di Renner si occupa solo di queste attività che non creano
+ valore aggiunto per il cliente.
+ La gestione della fattura passa quindi all’amministrazione che deve verificare
+ l’avvenuto pagamento delle fatture emesse.
+ Esistono due modi per pagare una fattura emessa da Renner: tramite ri.ba.
+ o tramite bonifico su conto corrente bancario.
+ La ri.ba.
+ viene emessa da Renner stessa che, tramite la propria banca, sollecita
+ la banca del debitore a pagare quanto dovuto.
+ Il bonifico su conto corrente, invece, viene ordinato dal debitore che,
+ tramite la sua banca, paga Renner.
+ I clienti solitamente tendono a preferire il bonifico nella speranza di
+ posticipare il più possibile i pagamenti.
+ 
+\end_layout
+
+\begin_layout Standard
+Qualunque sia il metodo usato, Renner controlla in maniera non automatica
+ il pagamento di ogni singola fattura.
+ Il ciclo si conclude con l’archiviazione della fattura, che avviene anch’essa
+ manualmente.
+ I documenti stampati vengono, infatti, portati in un archivio dove vengono
+ immagazzinati e conservati per 10 anni con notevole spreco di spazio.
+ 
+\end_layout
+
+\begin_layout Standard
+Nel caso un operatore abbia bisogno di consultare una fattura, dovrà recarsi
+ personalmente nell’archivio, che spesso raggiunge dimensioni notevoli e
+ che, oltre a dover essere mantenuto in ordine, deve essere controllato
+ in termini di temperatura e umidità, per evitare che la carta si degradi
+ a tal punto da essere illeggibile.
+ Renner ha comunicato che questa operazione di ricerca viene svolta 3-4
+ volte a settimana considerando il solo ciclo attivo della fatturazione,
+ comportando un costo non indifferente.
+\end_layout
+
+\begin_layout Subsection
+Mappature flusso attività dell'
+\emph on
+as-is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/preparazione-fattura.png
+	lyxscale 70
+	scale 29
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Preparazione fattura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/controllo-fattura.png
+	lyxscale 29
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Controllo fattura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/stampa-fattura.png
+	lyxscale 29
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Stampa fattura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/invio-fattura.png
+	lyxscale 29
+	scale 29
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Invio fattura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/conservazione-fattura.png
+	lyxscale 29
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+conservazione fattura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vale inoltre la pena mappare l’attività di consultazione fattura che, pur
+ non appertendo in senso stretto al processo di fatturazione, è rilevante
+ ai fini della comprensione dei benefici ottenuti a seguito delle nuove
+ modalità di conservazione.
+\end_layout
+
+\begin_layout Standard
+Può essere necessario consultare l’archivio delle fatture in caso di controllo
+ da parte degli organi competenti, a seguito di un reclamo da parte di un
+ cliente o per altre esigenze interne.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/consultazione-fattura.png
+	lyxscale 29
+	scale 29
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Consultazione fattura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Analisi delle prestazioni
+\end_layout
+
+\begin_layout Subsection
+Kpi
+\end_layout
+
+\begin_layout Subsubsection
+Indicatori generali
+\end_layout
+
+\begin_layout Itemize
+Volumi input
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Numero contestazioni: Numero medio annuo di contestazioni ricevute per errori
+ nelle fatture.
+ 
+\end_layout
+
+\begin_layout Itemize
+Numero fatture archiviate: Numero medio annuo di fatture da conservare per
+ motivi normativi.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Livello risorse
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Numero addetti: Numero di addetti al ciclo 
+\begin_inset Quotes eld
+\end_inset
+
+preparazione - compilazione - stampa - invio
+\begin_inset Quotes erd
+\end_inset
+
+ della fattura
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Volumi output
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Numero fatture processate: Numero di fatture processate nell’ultimo anno
+ (vista la forte crescita dell’azienda negli ultimi anni non è significativo
+ conoscere la media annua di fatture processate in quanto il dato non è
+ di grande utilità visto il notevole incremento di volumi) 
+\end_layout
+
+\begin_layout Itemize
+Numero note di credito: Numero medio annuo di note di credito emesse per
+ errori nelle fatture 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Indicatori interni
+\end_layout
+
+\begin_layout Itemize
+Costi
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Costo di processamento: costo di processamento di una singola fattura.
+ 
+\end_layout
+
+\begin_layout Itemize
+Costo di mantenimento: costo di mantenimento ed archiviazione delle fatture.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Qualità 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conformità con bolla: numero medio di incongruenze tra i dati presenti in
+ bolla e la fattura.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tempi
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tempo di processamento: tempo medio necessario per processare una fattura.
+\end_layout
+
+\begin_layout Itemize
+Tempo di reperimento: tempo medio necessario per reperire una fattura per
+ consultazione o controlli fiscali.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tempo di verifica errore: tempo medio necessario a verificare un errore
+ in fattura a seguito di un reclamo.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Flessibilità
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tempo di modifica: tempi di modifica fattura in caso di richiesta da parte
+ del cliente.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Indicatori esterni
+\end_layout
+
+\begin_layout Itemize
+Qualità
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Numero errori: Numero medio di fatture errate.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tempi
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lead time risposta: tempo medio che intercorre tra la segnalazione di un
+ errore e la risoluzione dello stesso.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Flessibilità
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tempo di modifica: tempi di modifica fattura in caso di richiesta.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Valutazione della robustezza degli indicatori
+\end_layout
+
+\begin_layout Standard
+Al fine di ottenere un monitoraggio efficace delle prestazioni è necessario
+ valutare tutti gli indicatori in termini di robustezza e fattibilità, in
+ particolare sarà necessario valutare:
+\end_layout
+
+\begin_layout Itemize
+Comprensibilità: Facilità di comprensione 
+\end_layout
+
+\begin_layout Itemize
+Costo elaborazione Facilità ed economicità della misurazione 
+\end_layout
+
+\begin_layout Itemize
+Significatività: Rapporto con le prestazioni chiave del processo 
+\end_layout
+
+\begin_layout Itemize
+Frequenza: Variabilità nel tempo dell’indicatore, per cui ha senso monitorarne
+ l’andamento 
+\end_layout
+
+\begin_layout Itemize
+Strutturazione: Grado di oggettività della misurazione
+\end_layout
+
+\begin_layout Standard
+Abbiamo giudicato ognuna di queste dimensioni utilizzando una scala da 1
+ a 5 e attribuendo un peso a ciascuna dimensione in base alla sua importanza,
+ in particolare i pesi assegnati sono:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comprensibilità
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Costo elaborazione
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Significatività
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Frequenza
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Strutturazione
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Valutazione indicatori
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/tabella-kpi.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tabella dei KPI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Profilatura dei KPI
+\end_layout
+
+\begin_layout Standard
+Per un’analisi completa, risulta necessario descrivere gli indicatori appena
+ evidenziati secondo i seguenti criteri: -
+\end_layout
+
+\begin_layout Itemize
+Descrizione 
+\end_layout
+
+\begin_layout Itemize
+Codifica della metrica 
+\end_layout
+
+\begin_layout Itemize
+Unità di misura 
+\end_layout
+
+\begin_layout Itemize
+Definizione del livello di aggregazione nella misura 
+\end_layout
+
+\begin_layout Itemize
+Definizone della fonte 
+\end_layout
+
+\begin_layout Itemize
+Definizione della frequenza di rilevazione 
+\end_layout
+
+\begin_layout Itemize
+Valori
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/costo di processamento.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Costo di processamento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il costo di processamento di una singola fattura è stato calcolato come:
+ 
+\end_layout
+
+\begin_layout Standard
+Materiali diretti: 
+\begin_inset Formula $10fogli/copia*0,06€/foglio*2copie/fatture=1,2€/fattura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Spedizione: 
+\begin_inset Formula $0,06€/busta*1busta/fattura+1,4€/francobollo*1francobollo/fattura=1,46€/fattura$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Lavoro diretto: 
+\begin_inset Formula $0,065h/fattura*20€/h=1,3€/fattura$
+\end_inset
+
+ (Il costo del lavoro diretto è stato calcolato ipotizzando l’impiego di
+ mezza risorsa equivalente, su un totale di 15.000 fatture all’anno, con
+ un costo della manodopera di 20€/h )
+\end_layout
+
+\begin_layout Standard
+* Dopo l’implementazione del nuovo sistema di fatturazione elettronica,
+ la metrica, ovviamente, sarà: 
+\begin_inset Formula $(ore\: uomo\: necessarie)*(costo\: orario\: del\: lavoro)+costo\: del\: servizio/numero\: fatture$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/Tempo di processamento.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tempo di processamento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Il costo del lavoro diretto è stato calcolato ipotizzando l’impiego di
+ mezza risorsa equivalente, su un totale di 15.000 fatture all’anno
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/costo di mantenimento.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Costo di mantenimento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/Numero contestazioni.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Numero di contestazioni
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/numero note di credito.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Numero note di credito
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/tempo di reperimento.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tempo di reperimento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Valutazione delle determinanti dell'
+\emph on
+as-is
+\end_layout
+
+\begin_layout Subsubsection
+Flusso delle attività
+\end_layout
+
+\begin_layout Standard
+Non tutte le attività del processo creano valore effettivo per il cliente,
+ come ad esempio tutte le attività operative antecedenti la spedizione.
+ Alcune risultano essere indispensabili per il corretto svoglimento del
+ processo, ma non per questo devono essere necessariamente svolte all’interno
+ dell’azienda.
+ Il flusso del processo è lineare, e non presenta ricicli o duplicazioni
+ di attività, grazie anche al sistema ERP che raccoglie ed integra le informazio
+ni necessarie.
+\end_layout
+
+\begin_layout Subsubsection
+Organizzazione
+\end_layout
+
+\begin_layout Standard
+Non è chiaro se esista un responsabile di processo, così come le mansioni
+ affidate ai diversi operatori variano a seconda delle necessità.
+ Questo comporta lo svolgimento sia di attività prettamente operative sia
+ di altre più complesse da parte dello stesso dipendente.
+\end_layout
+
+\begin_layout Subsubsection
+Competenze e risorse
+\end_layout
+
+\begin_layout Standard
+Ogni operatore coinvolto nel processo detiene le competenze necessarie per
+ svolgere i diversi compiti richiesti, e in generale non occorrono conoscenze
+ eccessivamente specialistiche.
+ Nei momenti di eccessiva saturazione delle risorse i tre addetti vengono
+ affiancati da un quarto, nonostante la ripartizione delle attività tra
+ le risorse sia abbastanza bilanciata.
+\end_layout
+
+\begin_layout Subsubsection
+Pianificazione e controllo delle prestazioni
+\end_layout
+
+\begin_layout Standard
+Nonostante il sistema ERP assicuri un buon livello di correttezza dei dati
+ utilizzati, sarebbe comunque opportuno monitorare il numero e le cause
+ delle diverse contestazioni pervenute.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Tecnologia
+\end_layout
+
+\begin_layout Standard
+Il sistema ERP implementato svolge un ruolo fondamentale nel processo, garantend
+o sistemi di comunicazione rapidi ed efficaci tra le diverse funzioni aziendali.
+\end_layout
+
+\begin_layout Subsection
+Analisi del valore
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/analisi-del-valore.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Analisi del valore
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Criticità di partenza
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/criticita-di-partenza.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Criticità
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Analisi dei costi di transazione
+\end_layout
+
+\begin_layout Standard
+Secondo la letteratura
+\begin_inset CommandInset citation
+LatexCommand cite
+key "la-gestione-dellimpresa"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lorganizzazione-dellimpresa"
+
+\end_inset
+
+, al fine di effettuare un analisi più approfondita riguardo alla decisione
+ di Renner di affidare al proprio partner bancario il processo di fatturazione
+ vale la pena considerare i costi di transazione legati al processa mento
+ e alla conservazione delle fatture.
+ 
+\end_layout
+
+\begin_layout Standard
+In particolare vogliamo valutare una serie di fattori che influenzano le
+ decisioni di outsourcing o integrazione verticale.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Complessità descrittiva del bene richiesto
+\series default
+: Nel nostro caso la fattura è un documento standardizzato e non particolarmente
+ complesso da descrivere ne da definire a livello di specifiche ma necessità
+ di molteplici informazioni puntuali e precise per poter essere prodotta
+ di conseguenza possiamo affermare che si tratta di un bene dalla complessità
+ descrittiva media.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Specificità
+\series default
+: Unicredit non ha dovuto sostenere investimenti relazionali specifici di
+ grande entità poiché il servizio è offerto a tutte le imprese che lo desiderano
+ e non sono necessari investimenti particolari per ciascuna impresa.
+ Le competenze specifiche acquisite da Unicredit per erogare questo servizio
+ sono inoltre riutilizzabili per ciascuna impresa; in conclusione la specificità
+ delle risorse è piuttosto bassa.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Incertezza
+\series default
+: Poiché Renner ha scelto il proprio partner bancario come erogatore del
+ servizio possiamo dire che il grado di incertezza sulla relazione futura
+ non sia particolarmente elevato.
+ Bisogna però considerare che essendo un investimento in nuove tecnologie,
+ di cui si può da poco usufruire, il grado di incertezza tende a salire.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Frequenza delle transazioni
+\series default
+: La frequenza delle transazioni è estremamente elevata in quanto le fatture
+ vengono emesse giornalmente e in modo continuativo nel tempo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/analisi-dei-costi-di-transazione.png
+	lyxscale 40
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Fattori che influenzano l'esistenza di mercati intermedi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considerati tutti questi fattori possiamo affermare che la decisione di
+ affidare in outsourcing il processo instaurando un rapporto di partnership
+ sia la decisione migliore.
+\end_layout
+
+\begin_layout Section
+Mappatura dei processi dopo il cambiamento
+\end_layout
+
+\begin_layout Subsection
+Diagramma ad albero delle fasi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/diagramma-to-be.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagramma ad albero delle fasi nel 
+\emph on
+to-be
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Flusso delle attività 
+\emph on
+to-be
+\end_layout
+
+\begin_layout Standard
+Non ci sono stati cambiamenti radicali per quanto riguarda l’acquisione
+ di un nuovo cliente o l’ inserimento di un nuovo ordine.
+ Le novità introdotte interessano esclusivamente il processo di fatturazione
+ e la consultazione delle fatture.
+ 
+\end_layout
+
+\begin_layout Standard
+Renner ha infatti stipulato un accordo con Unicredit per la gestione in
+ outsourcing del processo di fatturazione; questa scelta è dovuta al fatto
+ che l’azienda non era economicamente in grado di supportare l’ingente investime
+nto necessario per implementare il servizio completamente in-house.
+\end_layout
+
+\begin_layout Standard
+Tra tutte le offerte di fatturazione elettronica in outsourcing presenti
+ sul mercato, Renner ha scelto la partnership con Unicredit per ragioni
+ di affidabilità e di partnership economica.
+ E’ abbastanza realistico aspettarsi che una banca sia più affidabile di
+ qualsiasi altro fornitore di servizi e che, essendo Renner da tempo cliente
+ di Unicredit, quest’ultima abbia già una discreta visibilità sui movimenti
+ finanziari dell’impresa.
+ In questo modo ci si assicura che dati sensibili sul fatturato siano trasmessi
+ al minor numero di partner possibili.
+ 
+\end_layout
+
+\begin_layout Standard
+Quando un ordine viene evaso, viene generata la fattura corrispondente,
+ esattamente come nel caso as-is.
+ Al momento della compilazione della fattura l’addetto di Renner carica
+ l’ordine dall’ERP e verifica che vi sia corrispondenza tra la bolla e l’ordine
+ stesso.
+ L’addetto modifica anche i prezzi e applica particolari scontistiche in
+ base al cliente.
+ 
+\end_layout
+
+\begin_layout Standard
+Quando la fattura è pronta viene salvata nell’ ERP predisposta per essere
+ spedita al sistema di fatturazione elettronica di Unicredit.
+ Ogni giorno le nuove fatture salvate sono inviate per via telematica dall’ERP
+ di Renner ad Unicredit tramite un file xml.
+ 
+\end_layout
+
+\begin_layout Standard
+Le fatture ricevute vengono immagazzinate e rese disponibili al personale
+ Renner per la consultazione a partire dal giorno successivo, per permettere
+ all’ impresa di controllare la correttezza delle fatture inviate e di risolvere
+ prima dell’archiviazione eventuali disguidi.
+ 
+\end_layout
+
+\begin_layout Standard
+Passato il termine di un giorno di verifica, le fatture vengono emesse,
+ firmate digitalmente e portate in conservazione.
+ Unicredit stessa emetterà in seguito le fatture per conto di Renner in
+ maniera diversificata per ogni cliente.
+ Tutti i clienti che hanno aderito alla fatturazione elettronica riceveranno
+ le fatture in tale modalità, mentre i rimanenti riceveranno una regolare
+ fattura stampata, piegata, imbustata ed affrancata da Unicredit per conto
+ di Renner.
+ 
+\end_layout
+
+\begin_layout Standard
+L’archiviazione è anch’essa gestita da Unicredit, che si occupa di archiviare
+ elettronicamente le fatture, a prescindere dal fatto che esse siano state
+ emesse in modalità cartacea o elettronico.
+ In caso di fattura cartacea, essa viene archiviata mediante la conservazione
+ sostitutiva.
+ In questo modo la fattura è sempre consultabile in modo telematico da Renner,
+ indipendentemente dalla modalità di emissione, agevolando notevolmente
+ il personale.
+ Ogni 15 giorni Unicredit invia un CD a Renner contenente gli ultimi lotti
+ di fatture su cui è stata applicata la marca temporale che ne certifica
+ il valore legale.
+ Unicredit, inoltre, crea una copia del proprio archivio sul sistema informativo
+ di Renner, che pur non avendo valore legale è utile per snellire il processo
+ di consultazione delle fatture: è infatti sufficiente avere un computer
+ connesso all’ intranet aziendale per poter visualizzare le fatture richieste
+ senza dover accedere al sistema di consultazione di Unicredit.
+ 
+\end_layout
+
+\begin_layout Standard
+La ricerca di fatture viene effettuata mediamente 2-3 volte la settimana,
+ ed è stato stimato un risparmio di circa tre ore-uomo alla settimana grazie
+ all’implementazione del nuovo processo.
+ Nel caso di errori in alcune fatture si procede con il rilascio di note
+ di credito o di debito, che vengono processate esattamente come delle fatture
+ cartacee, ma vengono gestite interamente da Unicredit, per poi essere inserite
+ nell’archivio elettronico.
+ Gestendo le note di credito o di debito in formato elettronico c’è il vantaggio
+ di poter stabilire dei link con le corrispettive fatture.
+ 
+\end_layout
+
+\begin_layout Standard
+Tutte le fasi svolte da Unicredit sono trasparenti per i clienti dell’azienda,
+ a cui vengono recapitate le fatture con l’indirizzo di Renner senza fare
+ alcun riferimento alla banca.
+\end_layout
+
+\begin_layout Subsection
+Mappature flusso attività 
+\emph on
+to-be
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/controllo-ed-invio-fattura.png
+	lyxscale 19
+	scale 19
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Controllo ed invio fattura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/consultazione-fattura-to-be.png
+	lyxscale 29
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Consultazione fattura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Analisi dei benefici tangibili ed intangibili
+\end_layout
+
+\begin_layout Standard
+In questo paragrafo si passa alla desrizione dei benefici avuti da Renner
+ dopo il cambiamento del processo di fatturazione.
+ I benefici vengono raggruppati in due categorie: 
+\end_layout
+
+\begin_layout Itemize
+benefici tangibili: facilmente associabili a variazioni di costi e ricavi
+ e facilmente valutabili in termini monetari.
+ 
+\end_layout
+
+\begin_layout Itemize
+benefici intangibili: diffcilmente valutabili in termini economici, ma riconduci
+bili a fattori come immagine dell’azienda e soddisfazione dei clienti.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/analisi-dei-benefici.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Categorizzazione dei benefici
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Di seguito viene presentato un elenco dei benefici riscontrati dall’azienda
+ e, per ognuno di essi, una breve descrizione e dove possibile il calcolo
+ della varizione tra as-is e to-be.
+ 
+\end_layout
+
+\begin_layout Itemize
+Costi
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Gestendo in house il processo di fatturazione Renner sosteneva costi di
+ materiali diretti(carta, toner, buste, costi di affrancatura) che non sussitono
+ più grazie alla gestione del processo in outsourcing.
+ Al momento Renner paga una rata per il servizio ricevuto da Unicredit,
+ e tale costo è composto di un canone fisso e da una parte proporzionale
+ al numero di fatture.
+ Partendo dai dati forniti da Renner sui costi dei materiali (costo di un
+ foglio=0,06 €, costo di una busta=0,06 €, costo di una stampa=0,1 €, costo
+ di spedizione di una fattura nell’Unione Europea=1,4 €) si è calcolato
+ il delta costi dell’azienda: costo stampa fatture=15000*10*0,1*2=3.000 €,
+ fatture di 10 pagine in media e stampate in duplice copia.
+ Costo dei fogli=15000*10*0,06*2=1.800 € Costo delle buste=15000*0,06=90
+ € Costo di affrancatura=15000*1,40=2.100 € Sommando tutti questi costi si
+ ottiene il costo totale delle fasi di stampa, imbustamento e spedizione
+ delle fatture che risulta essere 34.000 €.
+ Al netto del costo del servizio di fatturazione elettronica dovuto aUnicredit
+ di 6.000 € si ha un risparmio di 28.000 €, paragonabile al risparmio effettivo
+ dichiarato da Renner che è di 26.000 €.
+ *
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Risparmio per il non aumento del personale addetto alla fase di stampa e
+ spedizione con l'incremento delle fatture emesse
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+All’analisi dell’indicatore precedente bisogna aggiungere che la persona
+ (½ per l’Italia, ½ per l’estero) addetta alle fasi sopra elencate viene
+ impiegata in una diversa attività che può produrre maggior valore aggiunto
+ per l’azienda.
+ Facendo delle ipotesi sulla crescita di fatturato dei prossimi anni e considera
+ndo il numero di fatture proporzionale al fatturato, è stato stimato un
+ ulteriore risparmio di personale addetto a queste attività.
+ Ipotizzando, infatti, che la capacità dell’addetto sia satura e quindi
+ che non possa gestire più di 15.000 fatture all’anno, e che il numero di
+ fatture cresca del 25% (media degli ultimi 4 anni), si ricava che per gestire
+ le 18.750 fatture si avrebbe la necessità di 0,25 unità in più all’anno,
+ che aumenteranno a 0,5 per l’anno successivo a pari tasso di crescita (numero
+ di fatture 22.500).
+ Considerando uno stipendio lordo di 24.000 € annui, si avrebbe un aumento
+ di costi pari a 6.000 € all’anno.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Risparmio tempo consultazione fatture
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Potendo consultare le fatture direttamente dal DMS aziendale gli addetti
+ non devono più recarsi in archivio.
+ Supponendo che questa attività abbia una frequenza di 2 o 3 volte a settimana,
+ per un totale di circa 30 minuti, si ricava che in un anno si risparmiano
+ circa 26 ore/uomo.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Costi energetici di gestione magazzino
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+per conservare le fatture per 10 anni è necessario che il magazzino abbia
+ una temperatura e un tasso di umidità abbastanza stabili nel tempo in modo
+ da non deteriorare i documenti.
+ Per conservare un CD in modo tale che sia leggibile per 10 anni non sono
+ necessarie precauzioni di questo tipo.
+ Ciò si traduce in un risparmio in termini di consumo di energia per mantenere
+ il magazzino nelle condizioni ottimali.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Vantaggio competititvo
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In prospettiva futura l’esperienza maturata da Renner nell’adeguarsi alla
+ nuova tipologia di fatturazione, in largo aticipo rispetto ai competitors,
+ potrà essere vista dai clienti che adotteranno la stessa modalità di processame
+nto di fatture come un elemento distintivo a livello di immagine dell’azienda.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Trasparenza verso la banca
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Come già indicato nelle criticità iniziali, dando in outsourcing il processo
+ di fatturazione Renner si rende completamente trasparente alla banca.
+ Per alcune aziende questo può essere un problema, ma in questo caso si
+ potrà avere in futuro un beneficio in termini di velocità nella smobilitazione
+ del credito e dell’anticipo fatture da parte di Unicredit.
+ La banca, infatti, ha una visione migliore della solvibilità dell’azienda
+ e può quindi valutare più velocemente la possibilità di anticipare eventuali
+ fatture.
+ Questo vantaggio per Renner è ancora maggiore perchè, aquistando materiali
+ da fornitori esteri, paga le fatture passive più rapidamente di quanto
+ incassi le fatture attive dai clienti italiani.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Semplificazione e snellimento del processo di fatturazione
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Non dovendo più gestire la fatturazione in house Renner riesce così a snellire
+ il processo in quanto si occupa solo di creare il file xml da consegnare
+ a Unicredit e immagazzinare il CD con la versione elettronica delle fatture.
+ Rimane anche la fase di consultazione delle fatture, che viene decisamente
+ semplificata grazie alla possibilità si consultarele direttamente da terminale
+ senza doversi recare in archivio, con notevole risparmi di tempo.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Valutazione dell'investimento
+\end_layout
+
+\begin_layout Standard
+Per valutare la bontà dell’investimento fatto da Renner, applichiamo il
+ metodo del NPV:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+NPV=\sum_{t=1}^{5}\frac{F\cdot(1-tax)}{(1+k)^{t}}-I_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I flussi differenziali nei cinque anni in cui abbiamo considerato valido
+ l’investimento sono: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F1=26.000€$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F2=32.500€$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F3=40.625€$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F4=49.968€$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F5=59.962€$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sono stati calcolati considerando un tasso di crescita del fatturato come
+ riportato in figura.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/valutazione-investimento.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tasso di crescita del fatturato annuo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sull’asse delle ascisse abbiamo indicato i periodi considerati (in anni)
+ e sull’asse delle ordinate il tasso di crescita previsto delle fattura.
+\end_layout
+
+\begin_layout Standard
+Non conoscendo il livello di indebitamento di Renner, abbiamo ipotizzato
+ un costo del capitale medio pari a K=15%.
+ Considerando, inoltre, le seguenti ipotesi: 
+\end_layout
+
+\begin_layout Itemize
+tassa corporate del 40% 
+\end_layout
+
+\begin_layout Itemize
+Il tasso di crescita dei costi associati all’emissione delle fatture e il
+ tasso di aumento del numero di fatture emesse sono uguali al tasso di crescita
+ del fatturato (non tenendo conto, quindi, di eventuali economie di scala
+ o di apprendimento)
+\end_layout
+
+\begin_layout Standard
+L’investimento iniziale richiesto consiste nel costo opportunità relativo
+ agli incontri di formazione necessari per dirigenti ed operatori, in quanto
+ il corso di formazione è stato erogato gratuitamente da Unicredit.
+ 
+\end_layout
+
+\begin_layout Standard
+L’aggiornamento del sistema ERP aziendale non ha prodotto costi differenziali
+ in quanto l’erogatore di tale servizio ha operato gratuitamente, conscio
+ di aver utilizzato Renner come “test” per aggiungere questa nuova funzionalità
+ ai servizi offerti.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $16h*2responsabili*40€/h=1.280€8h*3operatori*20€/h=480€$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il valore residuo dell’investimento, ovvero la possibilità di ampliare la
+ gamma di servizi disponibili e la diminuzione dei tempi e costi necessari
+ per introdurre eventuali cambiamenti, non è stato considerato in quanto
+ difficilmente stimabile, ma menzionato nei benefici intangibili.
+\end_layout
+
+\begin_layout Standard
+Di conseguenza, l’NPV così calcolato risulta essere pari a 
+\begin_inset Formula $81.400€-1.760€=79.640€$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Gestione del cambiamento organizzativo
+\end_layout
+
+\begin_layout Standard
+Il nuovo sistema di fatturazione è stato introdotto in Renner senza particolari
+ resistenze interne, grazie ad una serie di fattori piuttosto rilevanti.
+ 
+\end_layout
+
+\begin_layout Standard
+Innanzitutto la politica aziendale volta all’innovazione, che ha reso possibile
+ la diffusione di una cultura all’interno dell’impresa di buona predisposizione
+ al cambiamento e alla sperimentazione di nuovi modelli organizzativi e
+ tecnologici.
+ 
+\end_layout
+
+\begin_layout Standard
+In secondo luogo l’impresa disponeva già di buone risorse tecnologiche e,
+ grazie anche al rapporto con il partner che aveva progettato il sistema
+ ERP aziendale, è stato possibile implementare il cambiamento dopo una fase
+ di test durata due mesi, senza particolari problematiche.
+ 
+\end_layout
+
+\begin_layout Standard
+Inoltre, nonostante il cambiamento sia stato implementato con una logica
+ tipicamente top down, si è generato un grande commitment da parte di tutti
+ gli attori del processo grazie anche, come detto in precedenza, ad una
+ matura cultura aziendale.
+ 
+\end_layout
+
+\begin_layout Standard
+Tutti questi fattori hanno permesso a Renner di implementare il cambiamento
+ in breve tempo e di conseguenza avere tempi di pay back molto ridotti.
+\end_layout
+
+\begin_layout Section
+Sviluppi futuri
+\end_layout
+
+\begin_layout Standard
+L’approccio strategico alla fatturazione elettronica di Renner porta a moltissim
+i sviluppi futuri in ottica di ottimizzazione di tempo e risorse impiegate.
+ 
+\end_layout
+
+\begin_layout Standard
+Un primo sviluppo potrebbe essere quello di integrare la fatturazione passiva
+ nei sistemi telematici già sviluppati per gestire il ciclo attivo.
+ Con questa implementazione si azzererebbero definitivamente i costi dell’archiv
+io (che al momento rimane invariato a causa della fatturazione passiva),
+ e si annullerebbero i tempi ed i costi per la consultazione di qualsiasi
+ tipo di fattura.
+ In questo ambito, Renner ha già espresso interesse a causa di pressioni
+ da parte di alcuni fornitori internazionali che stanno implementando la
+ fatturazione elettronica.
+ 
+\end_layout
+
+\begin_layout Standard
+La gestione in outsourcing di questo processo con un partner bancario può
+ portare a sviluppi unici per quanto riguarda liquidità e pagamenti dell’azienda.
+ Unificando il ciclo di fatturazione con il ciclo bancario sono possibili
+ anticipi delle fatture da parte di Unicredit ed emissioni automatiche della
+ ri.ba dopo un lasso di tempo prefissato.
+\end_layout
+
+\begin_layout Standard
+Dal punto di vista del ciclo passivo delle fatture, una sinergia con il
+ ciclo bancario potrebbe portare al pagamento automatico delle fatture passive,
+ previa verifica da parte del personale di Renner.
+ 
+\end_layout
+
+\begin_layout Standard
+Vi sarebbe, inoltre, la possibilità di informatizzare la gestione del magazzino,
+ in modo da aggiornare automaticamente le materie prime (usando tecnologia
+ come barcode, qr-code o rfid) per averne così il controllo in tempo reale.
+ Lo stesso approccio può essere utilizzato per lo stock e per le merci evase.
+ Dotando di chip rfid ogni prodotto è facile sapere, con una semplice scansione,
+ quale sia la quantità dei prodotti in stock.
+ Nel caso di merce in uscita sarebbe semplice, con la tecnologia rfid, controlla
+re che la merce sia conforme alla bolla e quindi alla fattura.
+ Questo sistema comporterebbe un ingente risparmio di tempo per le persone
+ incaricate di preparare e controllare le spedizioni.
+ 
+\end_layout
+
+\begin_layout Standard
+Analizzando il ciclo dell’ordine si può notare una frammentazione dei diversi
+ metodi in cui questo può essere effettuato: attualmente, infatti, gli ordini
+ arrivano a Renner sia in modo informatizzato (direttamente sull’ERP aziendale)
+ che via mail, fax, telefono..
+ Risulterebbe interessante creare un portale web tramite il quale i clienti
+ possano accedere al sistema ERP per effettuare ordini senza impegnare ulteriorm
+ente il personale aziendale.
+ Renner sta già lavorando con Microsoft per implementare Sharepoint all’interno
+ dell’azienda.
+ Questo software, integrato con l’ERP, permetterà di creare report aziendali
+ e avere un controllo maggiore della qualità dei processi, potendo quindi
+ individuare più facilmente eventuali criticità.
+ Si potrà, inolte, valutare la produttività degli agenti anche in base ai
+ tipi di prodotti venduti, e creare report riferiti ai clienti per classificare
+ e proporre i prodotti che con più probabilità verranno acquistati.
+ L’azienda sta pensando di utlizzare due degli addetti precedentemente adibiti
+ alla fatturazione elettronica, ai quali si aggiungerà un terzo dipendente,
+ per la realizzazione di un servizio di call center di supporto ai clienti
+ che vorranno noleggiare un tintometro (strumento usato per mescolare le
+ vernici e ottenere nuovi prodotti).
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "biblio"
+options "bibtotoc,elsarticle-num"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
